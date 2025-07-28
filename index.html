@@ -3,122 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fassil's Data Analytics Portfolio</title>
+  <title>Fassil — Data Portfolio</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background-color: #f4f6f8;
+      display: flex;
+      background: #f8f9fa;
       color: #333;
     }
-    h1, h2 {
-      color: #004085;
+    nav {
+      width: 250px;
+      background: #1e2732;
+      color: #fff;
+      padding: 40px 20px;
+      height: 100vh;
+      position: fixed;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 0;
-      font-weight: 700;
+    nav h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #ffc107;
     }
-    .subtitle {
-      text-align: center;
-      margin-top: 5px;
-      color: #555;
-      font-style: italic;
+    nav p {
+      font-size: 14px;
+      margin-top: 0;
+      color: #bbb;
+    }
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+      display: block;
+      margin-top: 20px;
       font-weight: 500;
     }
-    .section {
-      background: white;
-      padding: 25px 30px;
-      margin: 30px 0;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    nav a:hover {
+      color: #fff;
+    }
+    main {
+      margin-left: 270px;
+      padding: 40px;
+      max-width: 900px;
+    }
+    h2 {
+      color: #1e2732;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
     }
     .project {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .project h3 {
-      margin: 0 0 6px;
-      color: #007bff;
+      margin: 0;
+      color: #0077cc;
     }
     .project p {
-      margin: 0;
-      color: #555;
+      margin: 5px 0 0;
+      font-size: 15px;
       line-height: 1.5;
-    }
-    a {
-      text-decoration: none;
-      color: #007bff;
-      font-weight: 600;
-    }
-    a:hover {
-      text-decoration: underline;
     }
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      color: #888;
+      font-size: 0.9em;
       margin-top: 60px;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-  <h1>Fassil — Data Analyst & Analytics Engineer</h1>
-  <div class="subtitle">
-    Economist | Ex-Lecturer & Policy Analyst | Expert in Data Analytics
-  </div>
+  <nav>
+    <h1>Fassil</h1>
+    <p>Data Analyst | Analytics Engineer</p>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section class="section" id="about-me">
-    <h2>About Me</h2>
-    <p>
-      I am an economist (BA Economist and MSc Policy Analysis) with 3+ years of experience in data analytics.  
-      I’ve worked as a lecturer and policy analyst, and now I specialize in data analytics and analytics engineering.  
-      I am proficient in SQL, Python, Google BigQuery, Dataform, Looker Studio, and Power BI.
-    </p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m an economist with an MSc in Policy Analysis and 3+ years of experience in data analytics and analytics engineering. I’ve worked with Shopify, Amazon, and other e-commerce data. I specialize in SQL, Python, BigQuery, Dataform, Looker Studio, and Power BI.</p>
+    </section>
 
-  <section class="section" id="projects">
-    <h2>Projects</h2>
+    <section id="projects">
+      <h2>Projects</h2>
 
-    <div class="project">
-      <h3><a href="https://github.com/yourusername/Ecommerce-Sales-Dashboard" target="_blank" rel="noopener noreferrer">E-commerce Sales Dashboard</a></h3>
-      <p>
-        An interactive dashboard analyzing Shopify and Amazon sales data — highlighting top products, customer segments, and marketing ROI.  
-        Built using Google BigQuery for data processing and Looker Studio for visualization.
-      </p>
-    </div>
+      <div class="project">
+        <h3><a href="https://github.com/yourusername/ecommerce-dashboard">E-commerce Sales Dashboard</a></h3>
+        <p>Built a dashboard from Shopify & Amazon data using BigQuery + Looker Studio. Highlights include product KPIs, segmentation, and marketing ROI.</p>
+      </div>
 
-    <div class="project">
-      <h3><a href="https://github.com/yourusername/Car-Sales-Analytics" target="_blank" rel="noopener noreferrer">Car Sales Trend Analysis</a></h3>
-      <p>
-        Analyzed vehicle sales trends by model and region, using BigQuery and Power BI to deliver actionable insights for sales teams.  
-        Project focused on automotive industry data analytics.
-      </p>
-    </div>
+      <div class="project">
+        <h3><a href="https://github.com/yourusername/car-sales-analytics">Car Sales Analytics</a></h3>
+        <p>Analyzed vehicle sales trends and dealer performance across Europe. Used Python, SQL, and Power BI for reporting and forecasting.</p>
+      </div>
 
-    <div class="project">
-      <h3><a href="https://github.com/yourusername/Predictive-Maintenance" target="_blank" rel="noopener noreferrer">Predictive Maintenance Analytics</a></h3>
-      <p>
-        Built a predictive model to forecast vehicle maintenance needs using sensor data and time series analysis.  
-        Included visualization of alerts and maintenance scheduling dashboards.
-      </p>
-    </div>
+      <div class="project">
+        <h3><a href="https://github.com/yourusername/predictive-maintenance">Predictive Maintenance Model</a></h3>
+        <p>Developed a model using vehicle sensor data to predict required maintenance. Used time-series forecasting and anomaly detection.</p>
+      </div>
 
-    <div class="project">
-      <h3><a href="https://github.com/yourusername/Supply-Chain-Optimization" target="_blank" rel="noopener noreferrer">Supply Chain Demand Forecasting</a></h3>
-      <p>
-        Developed demand forecasting models for automotive parts using historical sales data, improving inventory management accuracy.  
-        Leveraged Python and SQL in a BigQuery environment.
-      </p>
-    </div>
+    </section>
 
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:fassil.yehuala@gmail.com">fassil.yehuala@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Fassilsis">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/fassil-s-yehuala/">linkedin.com/in/fassil-s-yehuala/</a></p>
+    </section>
 
-  <footer>
-    &copy; 2025 Fassil — Data Analytics Portfolio
-  </footer>
+    <footer>
+      &copy; 2025 Fassil | Built with 💡 and GitHub Pages
+    </footer>
+  </main>
 
 </body>
 </html>
