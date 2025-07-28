@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fahr — Data Portfolio</title>
-  <!-- Font Awesome CDN for icons -->
+
+  <!-- Montserrat font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome CDN -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,13 +16,15 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
+      font-family: 'Montserrat', sans-serif;
       background: #f8f9fa;
       color: #333;
+      display: flex;
+      min-height: 100vh;
     }
     nav {
       width: 250px;
@@ -27,9 +33,10 @@
       padding: 40px 20px;
       height: 100vh;
       position: fixed;
+      box-sizing: border-box;
     }
     nav h1 {
-      font-size: 24px;
+      font-size: 28px;
       margin-bottom: 10px;
       color: #ffc107;
     }
@@ -43,7 +50,8 @@
       text-decoration: none;
       display: block;
       margin-top: 20px;
-      font-weight: 500;
+      font-weight: 600;
+      transition: color 0.3s;
     }
     nav a:hover {
       color: #fff;
@@ -52,23 +60,35 @@
       margin-left: 270px;
       padding: 40px;
       max-width: 900px;
+      flex-grow: 1;
+      box-sizing: border-box;
     }
     h2 {
       color: #1e2732;
       border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
+      padding-bottom: 6px;
+      margin-top: 0;
     }
     .project {
       margin-bottom: 30px;
     }
     .project h3 {
-      margin: 0;
+      margin: 8px 0 5px;
       color: #0077cc;
+      font-weight: 700;
+    }
+    .project h3 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .project h3 a:hover {
+      text-decoration: underline;
     }
     .project p {
-      margin: 5px 0 0;
+      margin: 0;
       font-size: 15px;
       line-height: 1.5;
+      color: #444;
     }
     .project img {
       width: 100%;
@@ -76,13 +96,13 @@
       margin-bottom: 10px;
       object-fit: cover;
       height: 240px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     #about {
-      background: linear-gradient(
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
-        ),
-        url('images/about-bg.jpg') center/cover no-repeat;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('images/about-bg.jpg')
+        center/cover no-repeat;
       color: white;
       padding: 60px 30px;
       border-radius: 8px;
@@ -91,11 +111,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      box-sizing: border-box;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
     #about p {
       max-width: 700px;
       font-weight: 500;
-      font-size: 1.1em;
+      font-size: 1.15em;
+      line-height: 1.5;
     }
     .contact-icons {
       margin-top: 25px;
@@ -115,19 +138,41 @@
       font-size: 0.9em;
       margin-top: 60px;
       color: #777;
-      padding-bottom: 30px;
+      padding: 30px 0 20px;
+      border-top: 1px solid #ccc;
     }
     footer .contact-icons {
       justify-content: center;
       color: #555;
       font-size: 1.5em;
-      margin-top: 10px;
+      margin-top: 12px;
     }
     footer .contact-icons a {
       color: #555;
+      margin: 0 12px;
+      transition: color 0.3s ease;
     }
     footer .contact-icons a:hover {
       color: #0077cc;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+      }
+      main {
+        margin: 0;
+        padding: 20px;
+        max-width: 100%;
+      }
+      .contact-icons {
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -150,7 +195,7 @@
 
       <!-- Contact icons under About -->
       <div class="contact-icons" aria-label="Contact information">
-        <a href="mailto:you@example.com" title="Email" aria-label="Email">
+        <a href="mailto:youremail@example.com" title="Email" aria-label="Email">
           <i class="fas fa-envelope"></i>
         </a>
         <a href="https://github.com/yourusername" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
@@ -166,13 +211,13 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <img src="images/ecommerce.jpg" alt="E-commerce analytics" />
+        <img src="images/ecommerce-dashboard.jpg" alt="E-commerce analytics" />
         <h3><a href="https://github.com/yourusername/ecommerce-dashboard" target="_blank" rel="noopener">E-commerce Sales Dashboard</a></h3>
         <p>Analyzed Shopify and Amazon data using BigQuery and Looker Studio to visualize sales trends, product KPIs, and customer segments.</p>
       </div>
 
       <div class="project">
-        <img src="images/car-sales.jpg" alt="Car analytics" />
+        <img src="images/car-sales-analytics.jpg" alt="Car analytics" />
         <h3><a href="https://github.com/yourusername/car-sales-analytics" target="_blank" rel="noopener">Car Sales Trend Analysis</a></h3>
         <p>Built visual dashboards and forecasting tools to analyze car sales by region and model using SQL and Power BI.</p>
       </div>
@@ -182,16 +227,15 @@
         <h3><a href="https://github.com/yourusername/predictive-maintenance" target="_blank" rel="noopener">Predictive Maintenance Model</a></h3>
         <p>Created a model using sensor time-series data to predict maintenance needs in vehicle systems. Built with Python and anomaly detection libraries.</p>
       </div>
-
     </section>
 
-    <!-- Contact section for anchor but hidden since contact is under About and footer -->
+    <!-- Dummy contact section for anchor -->
     <section id="contact" style="display:none;"></section>
 
     <footer>
       <p>&copy; 2025 Fahr | Built with 💡 + GitHub Pages</p>
       <div class="contact-icons" aria-label="Contact information">
-        <a href="mailto:you@example.com" title="Email" aria-label="Email">
+        <a href="mailto:youremail@example.com" title="Email" aria-label="Email">
           <i class="fas fa-envelope"></i>
         </a>
         <a href="https://github.com/yourusername" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
