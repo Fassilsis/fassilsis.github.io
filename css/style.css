@@ -1,91 +1,196 @@
+/* Google Font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background: #f9f9f9;
-  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #007acc;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005f99;
 }
 
 header {
-  background: #2c3e50;
-  color: white;
-  padding: 1rem;
+  background-color: #004080;
+  padding: 1rem 2rem;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
+nav ul li a {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav ul li a:hover,
+nav ul li a.active {
+  border-color: #ffcc00;
+  color: #ffcc00;
 }
 
 main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  flex-grow: 1;
+  max-width: 1000px;
+  margin: 2rem auto 4rem auto;
+  padding: 0 2rem;
 }
 
-.center-content {
+footer {
+  background-color: #004080;
+  color: white;
   text-align: center;
-  padding-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
+
+/* ABOUT PAGE */
 
 .about-background {
-  background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80')
-    center/cover no-repeat;
-  color: white;
-  padding: 4rem 1rem;
+  background: 
+    linear-gradient(rgba(0, 64, 128, 0.7), rgba(0, 64, 128, 0.7)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  color: #fff;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .about-inner {
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
 }
+
+.about-inner h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.about-inner p {
+  font-weight: 300;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+/* PROJECTS PAGE */
 
 .project-list {
-  padding-left: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.project-list li {
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-list li:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.project-list strong {
+  font-weight: 700;
+  color: #004080;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* CONTACT PAGE */
+
 .contact-icons {
-  margin-top: 2rem;
   display: flex;
-  gap: 2rem;
-  font-size: 2rem;
   justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  font-size: 2.8rem;
 }
 
 .contact-icons a {
-  color: #2c3e50;
+  color: #004080;
   transition: color 0.3s ease;
 }
 
 .contact-icons a:hover {
-  color: #f39c12;
+  color: #ffcc00;
 }
 
-footer {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 2rem;
+/* Responsive */
+
+@media (max-width: 600px) {
+  nav ul {
+    gap: 1rem;
+  }
+
+  main {
+    padding: 0 1rem;
+    margin: 1.5rem auto 3rem auto;
+  }
+
+  .about-background {
+    padding: 3rem 1rem;
+  }
+
+  .project-list li {
+    padding: 1rem 1.5rem;
+  }
+
+  .contact-icons {
+    gap: 2rem;
+    font-size: 2.2rem;
+  }
 }
