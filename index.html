@@ -2,111 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fahr's Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-  <script defer src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fahr – Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Navigation -->
   <header>
-    <nav class="navbar">
-      <a href="#hero" class="nav-logo">FahrData</a>
-      <ul class="nav-menu">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+    <nav>
+      <ul>
+        <li><a href="#hero">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Hero/About -->
   <section id="hero" class="hero">
-    <div class="hero-content container-flex">
+    <div class="container-flex">
       <div class="hero-text">
         <h1>Hi, I'm Fahr</h1>
         <p>Economist turned Data Analyst & Analytics Engineer</p>
-        <p>Proficient in SQL, Python, BigQuery, Dataform, Looker Studio, Power BI</p>
+        <p>Experienced in BigQuery, Dataform, SQL, Python, Power BI, and Looker Studio. I've worked with Shopify, Amazon, and e-commerce datasets to drive business insights.</p>
       </div>
       <div class="hero-image">
-        <img src="images/your-photo.jpg" alt="Photo of Fahr" />
+        <img src="images/ecommerce.jpg" alt="Fahr's Photo" />
       </div>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I am an economist with an MSc in Policy Analysis and over 3 years of
-      experience in data analytics. I have worked extensively with Shopify,
-      Amazon, and e-commerce datasets, specializing in Google BigQuery,
-      Dataform, Looker Studio, SQL, Python, and Power BI.
-    </p>
-    <div class="contact-inline">
-      <a href="mailto:your.email@example.com" aria-label="Email">
-        <img src="images/email.svg" alt="Email Icon" />
-      </a>
-      <a href="https://github.com/Fassilsis" target="_blank" aria-label="GitHub">
-        <img src="images/github.svg" alt="GitHub Icon" />
-      </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
-        <img src="images/linkedin.svg" alt="LinkedIn Icon" />
-      </a>
-    </div>
-  </section>
-
+  <!-- Projects -->
   <section id="projects" class="projects">
     <h2>Projects</h2>
-    <div class="projects-grid">
-      <article class="project-card">
-        <img src="images/ecommerce.jpg" alt="Shopify Data Analysis" />
-        <div class="project-info">
-          <h3>Shopify E-commerce Analytics</h3>
-          <p>Exploratory and predictive analytics on Shopify sales data.</p>
-          <a href="#" target="_blank" class="btn">View Project</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="images/ecommerce.jpg" alt="Amazon Sales Data" />
-        <div class="project-info">
-          <h3>Amazon Sales Dashboard</h3>
-          <p>Interactive sales and inventory dashboard built with Looker Studio.</p>
-          <a href="#" target="_blank" class="btn">View Project</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <img src="images/ecommerce.jpg" alt="Automotive Industry Analysis" />
-        <div class="project-info">
-          <h3>Automotive Market Analytics</h3>
-          <p>Trend analysis and forecasting using BigQuery and Python.</p>
-          <a href="#" target="_blank" class="btn">View Project</a>
-        </div>
-      </article>
+    <div class="project-list">
+      <div class="project-card">
+        <img src="images/ecommerce.jpg" alt="Project 1">
+        <h3>Amazon Sales Dashboard</h3>
+        <p>Developed a BigQuery + Looker Studio pipeline to track Amazon KPIs for 5+ product categories.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/ecommerce.jpg" alt="Project 2">
+        <h3>Shopify Cohort Analysis</h3>
+        <p>SQL + Python analysis to identify returning customer trends and optimize marketing spend.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/ecommerce.jpg" alt="Project 1">
+        <h3>Amazon Sales Dashboard</h3>
+        <p>Developed a BigQuery + Looker Studio pipeline to track Amazon KPIs for 5+ product categories.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/ecommerce.jpg" alt="Project 2">
+        <h3>Shopify Cohort Analysis</h3>
+        <p>SQL + Python analysis to identify returning customer trends and optimize marketing spend.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/ecommerce.jpg" alt="Project 1">
+        <h3>Amazon Sales Dashboard</h3>
+        <p>Developed a BigQuery + Looker Studio pipeline to track Amazon KPIs for 5+ product categories.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/ecommerce.jpg" alt="Project 2">
+        <h3>Shopify Cohort Analysis</h3>
+        <p>SQL + Python analysis to identify returning customer trends and optimize marketing spend.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out for collaborations or job opportunities.</p>
-    <div class="contact-icons">
-      <a href="mailto:your.email@example.com" aria-label="Email" class="contact-icon">
-        <img src="images/email.svg" alt="Email Icon" />
-      </a>
-      <a href="https://github.com/Fassilsis" target="_blank" aria-label="GitHub" class="contact-icon">
-        <img src="images/github.svg" alt="GitHub Icon" />
-      </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" class="contact-icon">
-        <img src="images/linkedin.svg" alt="LinkedIn Icon" />
-      </a>
+    <h2>Contact</h2>
+    <div class="social-icons">
+      <a href="mailto:fahr@example.com"><img src="images/ecommerce.jpg" alt="Email"></a>
+      <a href="https://github.com/fassilsis" target="_blank"><img src="images/ecommerce.jpg" alt="GitHub"></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><img src="images/ecommerce.jpg" alt="LinkedIn"></a>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Fahr. All rights reserved.</p>
+    <p>&copy; 2025 Fahr – Data Analyst</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
