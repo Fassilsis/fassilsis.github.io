@@ -3,180 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fahr — Data Portfolio</title>
+  <title>Fahr Portfolio</title>
 
   <!-- Montserrat font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome CDN -->
+  <!-- Font Awesome 6 CDN -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-papbHhP2V+n3OaTzSQPBnYbhGmj51CpNYw69+ALfUt7rPh88ylq/nYu1NPaZ2+Vkme+j1LLCiwFqOLt2p6b49g=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
 
   <style>
     body {
-      margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      display: flex;
-      min-height: 100vh;
-    }
-    nav {
-      width: 250px;
-      background: #1e2732;
-      color: #fff;
-      padding: 40px 20px;
-      height: 100vh;
-      position: fixed;
-      box-sizing: border-box;
-    }
-    nav h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      color: #ffc107;
-    }
-    nav p {
-      font-size: 14px;
-      margin-top: 0;
-      color: #bbb;
-    }
-    nav a {
-      color: #bbb;
-      text-decoration: none;
-      display: block;
-      margin-top: 20px;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    main {
-      margin-left: 270px;
-      padding: 40px;
-      max-width: 900px;
-      flex-grow: 1;
-      box-sizing: border-box;
-    }
-    h2 {
-      color: #1e2732;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 6px;
-      margin-top: 0;
-    }
-    .project {
-      margin-bottom: 30px;
-    }
-    .project h3 {
-      margin: 8px 0 5px;
-      color: #0077cc;
-      font-weight: 700;
-    }
-    .project h3 a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .project h3 a:hover {
-      text-decoration: underline;
-    }
-    .project p {
       margin: 0;
-      font-size: 15px;
-      line-height: 1.5;
-      color: #444;
-    }
-    .project img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      object-fit: cover;
-      height: 240px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    #about {
-      background:
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('images/about-bg.jpg')
-        center/cover no-repeat;
-      color: white;
-      padding: 60px 30px;
-      border-radius: 8px;
-      margin-bottom: 40px;
-      min-height: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      box-sizing: border-box;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-    #about p {
-      max-width: 700px;
-      font-weight: 500;
-      font-size: 1.15em;
-      line-height: 1.5;
-    }
-    .contact-icons {
-      margin-top: 25px;
-      display: flex;
-      gap: 25px;
-      font-size: 1.8em;
-    }
-    .contact-icons a {
-      color: inherit;
-      transition: color 0.3s ease;
-    }
-    .contact-icons a:hover {
-      color: #ffc107;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      margin-top: 60px;
-      color: #777;
-      padding: 30px 0 20px;
-      border-top: 1px solid #ccc;
-    }
-    footer .contact-icons {
-      justify-content: center;
-      color: #555;
-      font-size: 1.5em;
-      margin-top: 12px;
-    }
-    footer .contact-icons a {
-      color: #555;
-      margin: 0 12px;
-      transition: color 0.3s ease;
-    }
-    footer .contact-icons a:hover {
-      color: #0077cc;
-    }
-    .contact-icons a i {
-      font-size: 2em;
-      color: currentColor;
+      background: #f9f9f9;
+      color: #222;
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      nav {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-        text-align: center;
-      }
-      main {
-        margin: 0;
-        padding: 20px;
-        max-width: 100%;
-      }
-      .contact-icons {
-        justify-content: center;
-      }
+    nav {
+      background: #2c3e50;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section#about {
+      background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80')
+        center/cover no-repeat;
+      color: white;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .contact-icons {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .contact-icons a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-icons a:hover {
+      color: #f1c40f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #2c3e50;
+      color: white;
+    }
+
+    footer .contact-icons {
+      justify-content: center;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+
+    footer .contact-icons a {
+      color: white;
+    }
+
+    footer .contact-icons a:hover {
+      color: #f1c40f;
     }
   </style>
 </head>
@@ -185,9 +91,6 @@
   <nav>
     <h1>Fahr</h1>
     <p>Data Analyst & Analytics Engineer</p>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
   </nav>
 
   <main>
@@ -211,46 +114,24 @@
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <!-- You can add your projects section here -->
 
-      <div class="project">
-        <img src="images/ecommerce.jpg" alt="E-commerce analytics" />
-        <h3><a href="https://github.com/yourusername/ecommerce-dashboard" target="_blank" rel="noopener">E-commerce Sales Dashboard</a></h3>
-        <p>Analyzed Shopify and Amazon data using BigQuery and Looker Studio to visualize sales trends, product KPIs, and customer segments.</p>
-      </div>
-
-      <div class="project">
-        <img src="images/car-sales.jpg" alt="Car analytics" />
-        <h3><a href="https://github.com/yourusername/car-sales-analytics" target="_blank" rel="noopener">Car Sales Trend Analysis</a></h3>
-        <p>Built visual dashboards and forecasting tools to analyze car sales by region and model using SQL and Power BI.</p>
-      </div>
-
-      <div class="project">
-        <img src="images/predictive-maintenance.jpg" alt="Predictive Maintenance" />
-        <h3><a href="https://github.com/yourusername/predictive-maintenance" target="_blank" rel="noopener">Predictive Maintenance Model</a></h3>
-        <p>Created a model using sensor time-series data to predict maintenance needs in vehicle systems. Built with Python and anomaly detection libraries.</p>
-      </div>
-    </section>
-
-    <!-- Dummy contact section for anchor -->
-    <section id="contact" style="display:none;"></section>
-
-    <footer>
-      <p>&copy; 2025 Fahr | Built with 💡 + GitHub Pages</p>
-      <div class="contact-icons" aria-label="Contact information">
-        <a href="mailto:fassil.yehuala@egmail.com" title="Email" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/fassilsis" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/fassil-s-yehuala" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </footer>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Fahr | Built with 💡 + GitHub Pages</p>
+    <div class="contact-icons" aria-label="Contact information">
+      <a href="mailto:fassil.yehuala@egmail.com" title="Email" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/fassilsis" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/fassil-s-yehuala" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>
