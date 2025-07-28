@@ -3,32 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fahr | Data Analyst</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Fahr - Data Analyst Portfolio</title>
+
+  <!-- Montserrat font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
   <header>
+    <h1>Fahr</h1>
     <nav>
-      <h1>Fahr</h1>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="center-content" style="text-align:center; padding-top:4rem;">
-    <h2>Welcome</h2>
-    <p style="max-width:600px; margin: 1rem auto; font-weight: 300; font-size:1.2rem;">
-      I’m Fahr, a data analyst & analytics engineer based in Munich, specializing in SQL, Python, BigQuery, Dataform, Looker Studio, and Power BI.
-    </p>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an economist with an MSc in Policy Analysis, formerly a lecturer and policy analyst, now a data analyst and analytics engineer. I have 3+ years of experience mainly with Google BigQuery, Dataform, Looker Studio, and proficiency in SQL, Python, and Power BI.
+      </p>
+      <div class="contact-inline" aria-label="Contact Links">
+        <a href="mailto:youremail@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Fassilsis" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="images/shopify-dashboard.jpg" alt="E-commerce Sales Dashboard" />
+          <h3>E-commerce Sales Dashboard</h3>
+          <p>
+            Built interactive dashboards for Shopify and Amazon sales data using BigQuery and Looker Studio, enabling real-time performance monitoring and insights.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="images/automotive-analytics.jpg" alt="Automotive Industry Analytics" />
+          <h3>Automotive Industry Analytics</h3>
+          <p>
+            Analyzed vehicle sensor data and sales trends with SQL and Python to support data-driven decisions in Munich’s automotive sector.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <img src="images/powerbi-report.jpg" alt="Power BI Reporting Automation" />
+          <h3>Power BI Reporting Automation</h3>
+          <p>
+            Developed automated refresh and visualization pipelines in Power BI integrating SQL Server data for key operational metrics.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out via any of the platforms below.</p>
+      <div class="contact-icons" aria-label="Contact Icons">
+        <a href="mailto:youremail@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Fassilsis" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Fahr</p>
+    &copy; 2025 Fahr
   </footer>
+
+  <script src="js/scripts.js" defer></script>
 </body>
 </html>
