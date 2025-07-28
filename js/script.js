@@ -1,14 +1,15 @@
-// Smooth scroll for navigation links
-document.querySelectorAll('a.nav-link').forEach((link) => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      window.scrollTo({
-        top: targetSection.offsetTop - 60,
-        behavior: 'smooth',
-      });
-    }
-  });
+// Add active navigation highlight on scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section');
+
+  function updateActive() {
+    let index = sections.length;
+    while (--index && window.scrollY + 150 < sections[index].offsetTop) {}
+    navLinks.forEach(link => link.classList.remove('active'));
+    navLinks[index].classList.add('active');
+  }
+
+  updateActive();
+  window.addEventListener('scroll', updateActive);
 });
