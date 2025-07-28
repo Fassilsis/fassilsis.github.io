@@ -3,350 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fahr | Data Analyst Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    /* Reset and base */
-    * {
-      box-sizing: border-box;
-      margin: 0; padding: 0;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-    a {
-      color: #0366d6;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #054a91;
-    }
-
-    /* Container */
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px 60px;
-    }
-
-    /* Header */
-    header {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      z-index: 1000;
-      transition: padding 0.3s ease, box-shadow 0.3s ease;
-      padding: 25px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header.shrink {
-      padding: 10px 20px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-    }
-    header .logo {
-      font-weight: 600;
-      font-size: 1.5rem;
-      color: #0366d6;
-      user-select: none;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
-    nav ul li a {
-      font-weight: 600;
-      font-size: 0.95rem;
-      padding: 6px 0;
-      border-bottom: 3px solid transparent;
-      transition: border-color 0.3s ease;
-      cursor: pointer;
-    }
-    nav ul li a.active,
-    nav ul li a:hover {
-      border-color: #0366d6;
-    }
-
-    /* Hero */
-    #hero {
-      padding-top: 120px;
-      padding-bottom: 80px;
-      text-align: center;
-      background: linear-gradient(135deg, #0366d6 0%, #054a91 100%);
-      color: white;
-    }
-    #hero h1 {
-      font-size: 2.75rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-      letter-spacing: 1px;
-    }
-    #hero p {
-      font-size: 1.25rem;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.5;
-      font-weight: 500;
-    }
-
-    /* About */
-    #about {
-      padding: 60px 0;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgb(3 102 214 / 0.15);
-      margin-bottom: 60px;
-    }
-    #about h2 {
-      font-weight: 600;
-      font-size: 2rem;
-      margin-bottom: 20px;
-      text-align: center;
-      color: #0366d6;
-    }
-    #about p {
-      font-size: 1.1rem;
-      max-width: 720px;
-      margin: 0 auto;
-      text-align: center;
-      color: #444;
-    }
-    #about .contact {
-      margin-top: 25px;
-      text-align: center;
-    }
-    #about .contact a {
-      display: inline-block;
-      margin: 0 10px;
-      font-size: 1.5rem;
-      color: #0366d6;
-      transition: color 0.3s ease;
-    }
-    #about .contact a:hover {
-      color: #054a91;
-    }
-
-    /* Projects */
-    #projects {
-      margin-bottom: 60px;
-    }
-    #projects h2 {
-      font-weight: 600;
-      font-size: 2rem;
-      margin-bottom: 30px;
-      text-align: center;
-      color: #0366d6;
-    }
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-      gap: 30px;
-    }
-    .project-card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgb(3 102 214 / 0.1);
-      overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-    }
-    .project-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 20px rgb(3 102 214 / 0.25);
-    }
-    .project-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-bottom: 2px solid #0366d6;
-    }
-    .project-card-content {
-      padding: 20px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .project-card-content h3 {
-      font-size: 1.25rem;
-      color: #0366d6;
-      margin-bottom: 12px;
-      font-weight: 600;
-    }
-    .project-card-content p {
-      color: #555;
-      flex-grow: 1;
-      font-size: 1rem;
-      margin-bottom: 18px;
-    }
-    .project-card-content a {
-      align-self: flex-start;
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: #0366d6;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.3s ease;
-    }
-    .project-card-content a:hover {
-      border-color: #0366d6;
-    }
-
-    /* Footer */
-    footer {
-      background: #222;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      user-select: none;
-    }
-    footer .contact a {
-      margin: 0 12px;
-      font-size: 1.5rem;
-      color: white;
-      transition: color 0.3s ease;
-    }
-    footer .contact a:hover {
-      color: #0366d6;
-    }
-
-    /* Responsive */
-    @media (max-width: 640px) {
-      header {
-        padding: 15px 15px;
-      }
-      #hero h1 {
-        font-size: 2rem;
-      }
-      #hero p {
-        font-size: 1rem;
-      }
-    }
-
-  </style>
-  <!-- FontAwesome CDN for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Fahr's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-
-  <header id="header">
-    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-      <div class="logo">Fahr</div>
-      <nav>
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <nav class="navbar">
+      <a href="#hero" class="nav-logo">FahrData</a>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="hero">
-    <div class="container">
-      <h1>Fahr - Data Analyst & Analytics Engineer</h1>
-      <p>Economist turned data analyst with 3+ years experience specializing in SQL, Python, BigQuery, Dataform, Looker Studio, and Power BI.</p>
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Fahr</h1>
+      <p>Economist turned Data Analyst & Analytics Engineer</p>
+      <p>Proficient in SQL, Python, BigQuery, Dataform, Looker Studio, Power BI</p>
     </div>
   </section>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I am an economist with an MSc in Policy Analysis, previously a lecturer and policy analyst. I now focus on data analytics and analytics engineering, leveraging tools like Google BigQuery, Dataform, Looker Studio, SQL, Python, and Power BI.</p>
-      <div class="contact" style="margin-top: 25px;">
-        <a href="mailto:your.email@example.com" aria-label="Email" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/fassilsis" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/fassilsis" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-      </div>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am an economist with an MSc in Policy Analysis and over 3 years of
+      experience in data analytics. I have worked extensively with Shopify,
+      Amazon, and e-commerce datasets, specializing in Google BigQuery,
+      Dataform, Looker Studio, SQL, Python, and Power BI.
+    </p>
+    <div class="contact-inline">
+      <a href="mailto:your.email@example.com" aria-label="Email">
+        <img src="images/email.svg" alt="Email Icon" />
+      </a>
+      <a href="https://github.com/Fassilsis" target="_blank" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub Icon" />
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn Icon" />
+      </a>
     </div>
   </section>
 
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="images/ecommerce.jpg" alt="Project 1" />
-          <div class="project-card-content">
-            <h3>Shopify Sales Analytics</h3>
-            <p>Analysis of Shopify sales data using SQL and Python, focusing on customer behavior and sales trends.</p>
-            <a href="https://github.com/fassilsis/shopify-project" target="_blank" rel="noopener noreferrer">View Project</a>
-          </div>
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <img src="images/project1.jpg" alt="Shopify Data Analysis" />
+        <div class="project-info">
+          <h3>Shopify E-commerce Analytics</h3>
+          <p>Exploratory and predictive analytics on Shopify sales data.</p>
+          <a href="#" target="_blank" class="btn">View Project</a>
         </div>
-        <div class="project-card">
-          <img src="images/car-sales.jpg" alt="Project 2" />
-          <div class="project-card-content">
-            <h3>Amazon Customer Sentiment</h3>
-            <p>Sentiment analysis on Amazon reviews leveraging NLP techniques and Python libraries.</p>
-            <a href="https://github.com/fassilsis/amazon-sentiment" target="_blank" rel="noopener noreferrer">View Project</a>
-          </div>
+      </article>
+
+      <article class="project-card">
+        <img src="images/project2.jpg" alt="Amazon Sales Data" />
+        <div class="project-info">
+          <h3>Amazon Sales Dashboard</h3>
+          <p>Interactive sales and inventory dashboard built with Looker Studio.</p>
+          <a href="#" target="_blank" class="btn">View Project</a>
         </div>
-        <div class="ecommerce">
-          <img src="images/project3.jpg" alt="Project 3" />
-          <div class="project-card-content">
-            <h3>Automotive Industry Analytics</h3>
-            <p>Insights into automotive market data using BigQuery and Power BI dashboards for real-time reporting.</p>
-            <a href="https://github.com/fassilsis/automotive-analytics" target="_blank" rel="noopener noreferrer">View Project</a>
-          </div>
+      </article>
+
+      <article class="project-card">
+        <img src="images/project3.jpg" alt="Automotive Industry Analysis" />
+        <div class="project-info">
+          <h3>Automotive Market Analytics</h3>
+          <p>Trend analysis and forecasting using BigQuery and Python.</p>
+          <a href="#" target="_blank" class="btn">View Project</a>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
-  <footer id="footer">
-    <div class="container">
-      <div class="contact" style="margin-bottom: 15px;">
-        <a href="mailto:your.email@example.com" aria-label="Email" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/fassilsis" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/fassilsis" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-      </div>
-      &copy; 2025 Fahr. All rights reserved.
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations or job opportunities.</p>
+    <div class="contact-icons">
+      <a href="mailto:your.email@example.com" aria-label="Email" class="contact-icon">
+        <img src="images/email.svg" alt="Email Icon" />
+      </a>
+      <a href="https://github.com/Fassilsis" target="_blank" aria-label="GitHub" class="contact-icon">
+        <img src="images/github.svg" alt="GitHub Icon" />
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn" class="contact-icon">
+        <img src="images/linkedin.svg" alt="LinkedIn Icon" />
+      </a>
     </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Fahr. All rights reserved.</p>
   </footer>
-
-  <script>
-    // Shrink header on scroll
-    const header = document.getElementById('header');
-    const navLinks = document.querySelectorAll('nav ul li a');
-
-    window.addEventListener('scroll', () => {
-      if(window.scrollY > 80) {
-        header.classList.add('shrink');
-      } else {
-        header.classList.remove('shrink');
-      }
-
-      // Highlight nav links on scroll
-      let fromTop = window.scrollY + header.offsetHeight + 15;
-
-      navLinks.forEach(link => {
-        let section = document.querySelector(link.hash);
-        if (!section) return;
-        if (
-          section.offsetTop <= fromTop &&
-          section.offsetTop + section.offsetHeight > fromTop
-        ) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
-    });
-  </script>
-
 </body>
 </html>
