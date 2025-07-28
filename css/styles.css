@@ -203,3 +203,67 @@ footer {
     font-size: 1rem;
   }
 }
+
+
+/* Hero with photo and text side by side */
+
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  color: #222;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+/* Remove old hero background styling for clean look */
+.hero {
+  background: #fefefe;
+  height: auto;
+  padding: 3rem 0;
+  text-align: left;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .container-flex {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 2.25rem;
+  }
+}
