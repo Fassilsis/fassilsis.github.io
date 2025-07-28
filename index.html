@@ -62,6 +62,21 @@
       font-size: 15px;
       line-height: 1.5;
     }
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    #about {
+      background: url('https://source.unsplash.com/xuTJZ7uD7PI/1600x900') center/cover no-repeat;
+      color: white;
+      padding: 60px 30px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+    #about p {
+      max-width: 700px;
+    }
     footer {
       text-align: center;
       font-size: 0.9em;
@@ -74,50 +89,43 @@
 
   <nav>
     <h1>Fassil</h1>
-    <p>Data Analyst | Analytics Engineer</p>
+    <p>Data Analyst & Analytics Engineer</p>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <main>
-  <section id="about" style="
-    background: url('https://source.unsplash.com/xuTJZ7uD7PI/1600x900') center;
-    color: white;
-    padding: 60px 30px;
-    border-radius: 8px;
-  ">
-    <h2>About Me</h2>
-    <p style="max-width: 700px;">
-      I am an economist with an MSc in Policy Analysis and 3+ years of experience in data analytics and analytics engineering. I’ve worked with Shopify, Amazon, and other e-commerce data. I specialize in SQL, Python, BigQuery, Dataform, Looker Studio, and Power BI
-    </p>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an economist with an MSc in Policy Analysis and 3+ years of experience in data analytics and analytics engineering. I’ve worked with Shopify, Amazon, and automotive data. I specialize in SQL, Python, BigQuery, Dataform, Looker Studio, and Power BI.
+      </p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
 
       <div class="project">
-        <img src="https://source.unsplash.com/800x400/?xuTJZ7uD7PI" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="E-commerce Project">
+        <img src="https://source.unsplash.com/A1cWJQ8qJsc/800x400" alt="E-commerce analytics">
         <h3><a href="https://github.com/yourusername/ecommerce-dashboard">E-commerce Sales Dashboard</a></h3>
-        <p>Built a dashboard from Shopify & Amazon data using BigQuery + Looker Studio. Highlights include product KPIs, segmentation, and marketing ROI.</p>
+        <p>Analyzed Shopify and Amazon data using BigQuery and Looker Studio to visualize sales trends, product KPIs, and customer segments.</p>
       </div>
 
       <div class="project">
-        <h3><a href="https://github.com/yourusername/ecommerce-dashboard">E-commerce Sales Dashboard</a></h3>
-        <p>Built a dashboard from Shopify & Amazon data using BigQuery + Looker Studio. Highlights include product KPIs, segmentation, and marketing ROI.</p>
+        <img src="https://source.unsplash.com/GYumuBnTqKc/800x400" alt="Car analytics">
+        <h3><a href="https://github.com/yourusername/car-sales-analytics">Car Sales Trend Analysis</a></h3>
+        <p>Built visual dashboards and forecasting tools to analyze car sales by region and model using SQL and Power BI.</p>
       </div>
 
       <div class="project">
-        <h3><a href="https://github.com/yourusername/car-sales-analytics">Car Sales Analytics</a></h3>
-        <p>Analyzed vehicle sales trends and dealer performance across Europe. Used Python, SQL, and Power BI for reporting and forecasting.</p>
-      </div>
-
-      <div class="project">
+        <img src="https://source.unsplash.com/qwtCeJ5cLYs/800x400" alt="Predictive Maintenance">
         <h3><a href="https://github.com/yourusername/predictive-maintenance">Predictive Maintenance Model</a></h3>
-        <p>Developed a model using vehicle sensor data to predict required maintenance. Used time-series forecasting and anomaly detection.</p>
+        <p>Created a model using sensor time-series data to predict maintenance needs in vehicle systems. Built with Python and anomaly detection libraries.</p>
       </div>
 
     </section>
+
 
     <section id="contact">
       <h2>Contact</h2>
