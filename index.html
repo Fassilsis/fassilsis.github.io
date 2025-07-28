@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fahr — Data Portfolio</title>
-    <!-- Font Awesome CDN for icons -->
+  <!-- Font Awesome CDN for icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,8 +16,8 @@
   />
   <style>
     body {
-      margin: 0;
       font-family: 'Montserrat', sans-serif;
+      margin: 0;
       display: flex;
       background: #f8f9fa;
       color: #333;
@@ -81,7 +82,7 @@
     #about {
       background: #1e2732;
       color: #fff;
-      padding: 40px 20px;
+      padding: 60px 30px;
       border-radius: 8px;
       margin-bottom: 40px;
       min-height: 300px;
@@ -89,7 +90,7 @@
       flex-direction: column;
       justify-content: center;
     }
-#about p {
+    #about p {
       max-width: 700px;
       font-weight: 500;
       font-size: 1.1em;
@@ -140,10 +141,11 @@
 
   <main>
     <section id="about">
-      <h1>About Me</h1>
+      <h2>About Me</h2>
       <p>
         I am an economist with an MSc in Policy Analysis and 3+ years of experience in data analytics and analytics engineering. I’ve worked with Shopify, Amazon, and automotive data. I specialize in SQL, Python, BigQuery, Dataform, Looker Studio, and Power BI.
       </p>
+
       <!-- Contact icons under About -->
       <div class="contact-icons" aria-label="Contact information">
         <a href="mailto:you@example.com" title="Email" aria-label="Email">
@@ -163,34 +165,37 @@
 
       <div class="project">
         <img src="images/ecommerce.jpg" alt="E-commerce analytics" />
-        <h3><a href="https://github.com/yourusername/ecommerce-dashboard">E-commerce Sales Dashboard</a></h3>
+        <h3><a href="https://github.com/yourusername/ecommerce-dashboard" target="_blank" rel="noopener">E-commerce Sales Dashboard</a></h3>
         <p>Analyzed Shopify and Amazon data using BigQuery and Looker Studio to visualize sales trends, product KPIs, and customer segments.</p>
       </div>
 
       <div class="project">
         <img src="images/car_sales.jpg" alt="Car analytics" />
-        <h3><a href="https://github.com/yourusername/car-sales-analytics">Car Sales Trend Analysis</a></h3>
+        <h3><a href="https://github.com/yourusername/car-sales-analytics" target="_blank" rel="noopener">Car Sales Trend Analysis</a></h3>
         <p>Built visual dashboards and forecasting tools to analyze car sales by region and model using SQL and Power BI.</p>
       </div>
 
       <div class="project">
         <img src="images/predictive-maintenance.jpg" alt="Predictive Maintenance" />
-        <h3><a href="https://github.com/yourusername/predictive-maintenance">Predictive Maintenance Model</a></h3>
+        <h3><a href="https://github.com/yourusername/predictive-maintenance" target="_blank" rel="noopener">Predictive Maintenance Model</a></h3>
         <p>Created a model using sensor time-series data to predict maintenance needs in vehicle systems. Built with Python and anomaly detection libraries.</p>
       </div>
 
     </section>
 
+    <!-- Contact section for anchor but hidden since contact is under About and footer -->
+    <section id="contact" style="display:none;"></section>
+
     <footer>
-      &copy; 2025 Fassil | Built with 💡 and GitHub Pages
+      <p>&copy; 2025 Fahr | Built with 💡 + GitHub Pages</p>
       <div class="contact-icons" aria-label="Contact information">
         <a href="mailto:fassil.yehuala@gmail.com" title="Email" aria-label="Email">
           <i class="fas fa-envelope"></i>
         </a>
-        <a href="https://github.com/Fassilsis" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+        <a href="https://github.com/fassilsis" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://linkedin.com/in/fassil-s-yehuala" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
@@ -199,3 +204,4 @@
 
 </body>
 </html>
+
