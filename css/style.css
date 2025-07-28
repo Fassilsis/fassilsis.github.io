@@ -11,6 +11,7 @@ body {
   background: #f9f9f9;
   color: #333;
   line-height: 1.6;
+  font-size: 18px;
 }
 
 a {
@@ -35,8 +36,8 @@ header {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: #0366d6;
 }
 
@@ -52,6 +53,7 @@ nav a {
   padding-bottom: 4px;
   border-bottom: 3px solid transparent;
   transition: color 0.3s, border-color 0.3s;
+  font-size: 1rem;
 }
 
 nav a:hover,
@@ -63,13 +65,13 @@ nav a.active {
 /* Hero Section */
 .hero {
   background: white;
-  padding: 6rem 2rem 4rem;
+  padding: 5rem 2rem 3rem;
 }
 
 .hero-container {
   display: flex;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   gap: 2rem;
   flex-wrap: wrap;
@@ -85,13 +87,14 @@ nav a.active {
 }
 
 .hero-text p {
-  margin-top: 0.5rem;
-  font-size: 1.1rem;
+  margin-top: 0.7rem;
+  font-size: 1.2rem;
   color: #555;
 }
 
 .hero-image {
-  flex: 0 0 250px;
+  flex: 0 0 200px;
+  max-width: 200px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -108,23 +111,21 @@ nav a.active {
 .about {
   padding: 4rem 2rem;
   background: white;
+  text-align: center;
 }
 
 .about h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   color: #0366d6;
-  text-align: center;
   margin-bottom: 1rem;
 }
 
 .about p {
   max-width: 800px;
-  margin: auto;
-  font-size: 1.1rem;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
   color: #555;
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 .about-contacts {
@@ -134,7 +135,7 @@ nav a.active {
 }
 
 .about-contacts img {
-  width: 35px;
+  width: 32px;
   filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(200deg) brightness(1);
   transition: filter 0.3s;
 }
@@ -147,28 +148,29 @@ nav a.active {
 .projects {
   padding: 4rem 2rem;
   background: white;
+  text-align: center;
 }
 
 .projects h2 {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 2.2rem;
   color: #0366d6;
   margin-bottom: 2rem;
 }
 
 .projects-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  max-width: 1100px;
+  margin: auto;
 }
 
 .project-card {
   background: #fefefe;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s;
-  text-align: center;
 }
 
 .project-card:hover {
@@ -181,79 +183,4 @@ nav a.active {
   object-fit: cover;
 }
 
-.project-card h3 {
-  font-size: 1.25rem;
-  color: #0366d6;
-  margin: 1rem 0 0.5rem;
-}
-
-.project-card p {
-  padding: 0 1rem 1.5rem;
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Contact Section */
-.contact {
-  padding: 4rem 2rem;
-  background: white;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #0366d6;
-}
-
-.contact p {
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.contact-icons {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.contact-icons img {
-  width: 40px;
-  filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(200deg) brightness(1);
-  transition: filter 0.3s;
-}
-
-.contact-icons img:hover {
-  filter: invert(55%) sepia(100%) saturate(700%) hue-rotate(200deg) brightness(1.2);
-}
-
-/* Footer */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text {
-    order: 2;
-  }
-
-  .hero-image {
-    margin: auto;
-  }
-
-  .projects-grid {
-    gap: 1rem;
-  }
-}
+.proj
