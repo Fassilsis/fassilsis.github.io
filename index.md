@@ -8,7 +8,7 @@ title: Portfolio
   <!-- Sidebar -->
   <div class="sidebar">
     <img src="https://via.placeholder.com/100" alt="Profile Photo" class="profile-pic" />
-    <h1>Placeholder Name</h1>
+    <h1>{{ site.title }}</h1>
     <p class="title">Data Analytics Engineer</p>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -45,9 +45,9 @@ title: Portfolio
 
     <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>Email: your.email@example.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+      <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p>GitHub: <a href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">{{ site.linkedin_username }}</a></p>
     </section>
 
   </div>
