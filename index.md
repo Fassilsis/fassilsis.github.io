@@ -13,8 +13,7 @@ title: Portfolio
 
     <div class="about-text">
       <p>
-        I am a Data Analytics Engineer with a strong background in data pipelines, visualization, and statistical analysis.
-        I specialize in building scalable data systems using tools like Python, SQL, Airflow, and Tableau to extract insights that drive business growth.
+        Versatile Data Analyst with a unique blend of social policy training and hands-on experience in data visualization, engineering, and statistical analysis. Skilled at turning complex datasets into actionable insights using Python, SQL, Tableau, and dbt, with a proven track record across sectors and collaborative environments.
       </p>
     </div>
 
@@ -27,7 +26,25 @@ title: Portfolio
 
   <!-- Main Content -->
   <div class="main-content">
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skill-item">Python</span>
+        <span class="skill-item">SQL</span>
+        <span class="skill-item">Tableau</span>
+        <span class="skill-item">dbt</span>
+        <span class="skill-item">BigQuery</span>
+        <span class="skill-item">Excel</span>
+        <span class="skill-item">AWS</span>
+        <span class="skill-item">Airflow</span>
+        <span class="skill-item">Data Visualization</span>
+        <span class="skill-item">Statistical Analysis</span>
+      </div>
+    </section>
+
     
+    <!-- Projects Section -->
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="projects-list">
