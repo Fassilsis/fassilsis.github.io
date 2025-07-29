@@ -58,7 +58,7 @@ a:focus {
 }
 
 .sidebar h1 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 5px;
   text-align: center;
 }
@@ -90,7 +90,7 @@ a:focus {
 .main-content {
   margin-left: 250px; /* sidebar width */
   padding: 40px 5%;
-  width: calc(100% - 250px);
+  width: 100%;
 }
 
 
