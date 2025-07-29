@@ -174,18 +174,19 @@ a:hover {
 
 .project-details h3 {
   margin: 0 0 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .project-details p {
   margin: 0 0 10px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
 .project-link {
+  font-size: 0.75rem;
   color: #64ffda;
-  font-weight: 600;
-  font-size: 0.95rem;
+  opacity: 0.8;
+  font-style: italic;
 }
 
 /* Footer */
