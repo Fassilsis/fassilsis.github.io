@@ -43,8 +43,8 @@ a:hover {
 }
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 3px solid #64ffda;
   margin-bottom: 20px;
@@ -75,6 +75,24 @@ a:hover {
 .nav-links a {
   display: block;
   font-weight: 600;
+}
+.contact-icons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-icons a img {
+  width: 30px;   /* control width */
+  height: 30px;  /* control height */
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* optional: makes icons white if they are dark */
+  transition: filter 0.3s ease;
+}
+
+.contact-icons a:hover img {
+  filter: brightness(0) invert(0.6) sepia(1) saturate(5) hue-rotate(150deg); /* subtle hover effect */
 }
 
 /* Main content */
