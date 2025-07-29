@@ -34,14 +34,14 @@ title: Portfolio
       <h2>Projects</h2>
       <div class="projects-list">
         {% for project in site.data.projects %}
-        <div class="project-row">
+        <a href="{{ project.link }}" class="project-row" target="_blank">
           <img src="{{ project.image }}" alt="{{ project.title }} Image" class="project-img" />
           <div class="project-details">
             <h3>{{ project.title }}</h3>
             <p>{{ project.description }}</p>
-            <a href="{{ project.link }}" target="_blank">View on GitHub</a>
+            <span class="project-link">View on GitHub</span>
           </div>
-        </div>
+        </a>
         {% endfor %}
       </div>
     </section>
