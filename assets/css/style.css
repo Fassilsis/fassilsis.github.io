@@ -28,7 +28,7 @@ a:hover {
 
 /* Sidebar */
 .sidebar {
-  width: 250px;
+  width: 400px;
   background-color: #1e1e1e;
   padding: 40px 20px;
   display: flex;
@@ -79,7 +79,7 @@ a:hover {
 
 /* Main content */
 .main-content {
-  margin-left: 250px;
+  margin-left: 400px;
   padding: 40px;
   width: 900px;
 }
@@ -100,8 +100,8 @@ a:hover {
 
 /* Projects grid */
 .projects-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* exactly 2 columns */
+  display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
