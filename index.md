@@ -1,13 +1,9 @@
----
-layout: default
-title: Portfolio
----
 
 <div class="layout">
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <img src="https://via.placeholder.com/100" alt="Profile Photo" class="profile-pic" />
+    <img src="images/placeholder.jpg" alt="Profile Photo" class="profile-pic" />
     <h1>{{ site.title }}</h1>
     <p class="title">Data Analytics Engineer</p>
     <ul class="nav-links">
