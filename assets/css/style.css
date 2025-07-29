@@ -88,17 +88,15 @@ a:focus {
 
 /* Main content */
 .main-content {
-  margin-left: 250px; /* same as sidebar width */
+  margin-left: 250px;
   padding: 40px 5%;
-  width: 90vw; /* Use about 90% of viewport width */
-  overflow-y: auto;
-  height: 100vh;
+  width: calc(100% - 250px);
 }
 
 /* Section styling */
 .section {
   margin-bottom: 80px;
-  max-width: 900px;
+  width: 100%;
 }
 
 /* Section headings */
