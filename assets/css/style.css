@@ -1,27 +1,39 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  margin: 0;
   background-color: #121212;
   color: #e0e0e0;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
+/* Links */
 a {
   color: #64ffda;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
+/* Navbar */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #1e1e1e;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e1e;
-  padding: 20px;
+  padding: 15px 30px;
   flex-wrap: wrap;
+  border-bottom: 1px solid #333;
 }
 
 .profile {
@@ -40,19 +52,36 @@ a:hover {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  flex-wrap: wrap;
 }
-
 .nav-links li a {
   font-weight: 600;
 }
 
+/* Section Base */
 .section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 80px 5%;
+  max-width: 1200px;
+  margin: auto;
 }
 
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #64ffda;
+}
+
+/* About Section */
+.about {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+/* Projects */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -64,10 +93,54 @@ a:hover {
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #333;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .project-card img {
   width: 100%;
   border-radius: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Contact Section */
+.contact p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #64ffda;
+  word-break: break-word;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .about {
+    font-size: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
