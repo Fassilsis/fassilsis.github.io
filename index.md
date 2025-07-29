@@ -15,7 +15,7 @@ title: Portfolio
       With a background in economics and public policy, I bring strong analytical thinking and hands-on experience in data modeling, analysis, and pipeline development. My academic training sharpened my skills in data analysis, statistical modeling, and quantitative research.
     </p>
     <p>
-      In recent years, I have taken on technical roles where I have built and maintained scalable data pipelines, developed automated reporting systems, and supported decision-making through data visualization. I helped design and deliver data solutions end-to-end (from ingestion to dashboards).
+      In recent years, I have taken on technical roles where I built and maintained scalable end-to-end data pipelines, developed automated reporting systems, and supported decision-making through data visualization.
     </p>
     <p>
      I can explore complex datasets, create data models that reflect real business logic, and communicate insights clearly and effectively.
