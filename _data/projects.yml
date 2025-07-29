@@ -5,25 +5,25 @@
 
 - title: Customer Churn Analysis
   description: Logistic regression model in Python to predict customer churn using telecom data.
-  image: https://raw.githubusercontent.com/yourusername/your-repo/main/images/ecommerce.jpg
+  image: https://raw.githubusercontent.com/fassilsis/your-repo/main/images/ecommerce.jpg
   link: https://github.com/yourusername/churn-model
 
 - title: Web Traffic ETL Pipeline
   description: Built a full ETL pipeline in Apache Airflow to track and clean web traffic data.
-  image: https://raw.githubusercontent.com/yourusername/your-repo/main/images/ecommerce.jpg
+  image: https://raw.githubusercontent.com/fassilsis/your-repo/main/images/ecommerce.jpg
   link: https://github.com/yourusername/etl-pipeline
 
 - title: Product Recommendation System
   description: Collaborative filtering system to recommend products based on user behavior.
-  image: https://raw.githubusercontent.com/yourusername/your-repo/main/images/ecommerce.jpg
+  image: https://raw.githubusercontent.com/fassilsis/your-repo/main/images/ecommerce.jpg
   link: https://github.com/yourusername/recommender-system
 
 - title: SQL Data Cleaning Toolkit
   description: Set of SQL scripts for cleaning and transforming raw data for analysis.
-  image: https://raw.githubusercontent.com/yourusername/your-repo/main/images/ecommerce.jpg
+  image: https://raw.githubusercontent.com/fassilsis/your-repo/main/images/ecommerce.jpg
   link: https://github.com/yourusername/sql-cleaning-toolkit
 
 - title: HR Analytics Dashboard
   description: Tableau dashboard for HR metrics like attrition, department-wise hiring trends.
-  image: https://raw.githubusercontent.com/yourusername/your-repo/main/images/ecommerce.jpg
+  image: https://raw.githubusercontent.com/fassilsis/your-repo/main/images/ecommerce.jpg
   link: https://github.com/yourusername/hr-dashboard
