@@ -10,7 +10,7 @@
 
 - title: Web Traffic ETL Pipeline
   description: Built a full ETL pipeline in Apache Airflow to track and clean web traffic data.
-  image: images/predictive-mainenance.jpg
+  image: images/predictive-maintenance.jpg
   link: https://github.com/fassilsis/etl-pipeline
 
 - title: Product Recommendation System
@@ -20,10 +20,10 @@
 
 - title: SQL Data Cleaning Toolkit
   description: Set of SQL scripts for cleaning and transforming raw data for analysis.
-  image: images/ecommerce.jpg
+  image: images/sql.jpg
   link: https://github.com/fassilsis/sql-cleaning-toolkit
 
 - title: HR Analytics Dashboard
   description: Tableau dashboard for HR metrics like attrition, department-wise hiring trends.
-  image: images/ecommerce.jpg
+  image: images/hr.jpg
   link: https://github.com/fassilsis/hr-dashboard
