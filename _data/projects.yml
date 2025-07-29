@@ -1,0 +1,29 @@
+- title: Sales Dashboard
+  description: An interactive dashboard built in Power BI to analyze sales trends across regions.
+  image: https://source.unsplash.com/400x300/?data,dashboard
+  link: https://github.com/yourusername/sales-dashboard
+
+- title: Customer Churn Analysis
+  description: Logistic regression model in Python to predict customer churn using telecom data.
+  image: https://source.unsplash.com/400x300/?analytics,charts
+  link: https://github.com/yourusername/churn-model
+
+- title: Web Traffic ETL Pipeline
+  description: Built a full ETL pipeline in Apache Airflow to track and clean web traffic data.
+  image: https://source.unsplash.com/400x300/?pipeline,data
+  link: https://github.com/yourusername/etl-pipeline
+
+- title: Product Recommendation System
+  description: Collaborative filtering system to recommend products based on user behavior.
+  image: https://source.unsplash.com/400x300/?machine-learning
+  link: https://github.com/yourusername/recommender-system
+
+- title: SQL Data Cleaning Toolkit
+  description: Set of SQL scripts for cleaning and transforming raw data for analysis.
+  image: https://source.unsplash.com/400x300/?sql,database
+  link: https://github.com/yourusername/sql-cleaning-toolkit
+
+- title: HR Analytics Dashboard
+  description: Tableau dashboard for HR metrics like attrition, department-wise hiring trends.
+  image: https://source.unsplash.com/400x300/?hr,data
+  link: https://github.com/yourusername/hr-dashboard
