@@ -24,7 +24,7 @@ title: Portfolio
     <div class="contact-icons">
       <a href="mailto:fassil.yehuala@gmail.com"><img src="/images/mail.png" alt="Email" /></a>
       <a href="https://github.com/fassilsis" target="_blank"><img src="/images/github.png" alt="GitHub" /></a>
-      <a href="https://linkedin.com/in/fassilsis" target="_blank"><img src="/images/linkedin.png" alt="LinkedIn" /></a>
+      <a href="https://linkedin.com/in/fassil-s-yehuala" target="_blank"><img src="/images/linkedin.png" alt="LinkedIn" /></a>
     </div>
   </div>
   <!-- Main Content -->
