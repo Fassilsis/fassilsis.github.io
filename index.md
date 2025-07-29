@@ -9,7 +9,7 @@ title: Portfolio
   <div class="sidebar">
     <img src="images/profile.JPG" alt="Profile Photo" class="profile-pic" />
     <h1>Fassil Yehuala</h1>
-    <p class="title">Analytics Engineer</p>
+    <p class="title">Data Analyst | Analytics Engineer</p>
     <div class="about-text">
     <p>
       With a background in economics and policy analysis, I bring strong analytical thinking and hands-on experience in data modeling, analysis, pipeline development, and visualization. My academic training sharpened my skills in data analysis, statistical modeling, and quantitative research.
