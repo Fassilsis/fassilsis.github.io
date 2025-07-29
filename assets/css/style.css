@@ -1,3 +1,5 @@
+
+
 /* Reset */
 * {
   box-sizing: border-box;
@@ -6,29 +8,36 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #121212;
   color: #e0e0e0;
   line-height: 1.6;
+  min-height: 100vh;
 }
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&display=swap');
 
 /* Links */
 a {
   color: #64ffda;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 a:hover {
+  color: #52d9b1;
   text-decoration: underline;
 }
 
 /* Layout */
 .layout {
   display: flex;
+  min-height: 100vh;
 }
 
 /* Sidebar */
 .sidebar {
-  width: 400px;
+  width: 300px;
   background-color: #1e1e1e;
   padding: 40px 20px;
   display: flex;
@@ -40,144 +49,205 @@ a:hover {
   left: 0;
   overflow-y: auto;
   border-right: 1px solid #333;
+  scrollbar-width: thin;
+  scrollbar-color: #64ffda transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #64ffda;
+  border-radius: 3px;
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 75%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   border: 3px solid #64ffda;
   margin-bottom: 20px;
   object-fit: cover;
 }
 
 .sidebar h1 {
-  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
   margin-bottom: 5px;
   text-align: center;
 }
 
 .sidebar .title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #aaa;
   margin-bottom: 30px;
   text-align: center;
+  font-style: italic;
 }
 
-.nav-links {
-  list-style: none;
+/* Bio */
+.about-text p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
   text-align: center;
-  width: 100%;
+  margin-bottom: 30px;
 }
-.nav-links li {
-  margin: 10px 0;
-}
-.nav-links a {
-  display: block;
-  font-weight: 600;
-}
+
+/* Contact Icons */
 .contact-icons {
-  margin-top: 30px;
   display: flex;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .contact-icons a img {
-  width: 30px;   /* control width */
-  height: 30px;  /* control height */
-  object-fit: contain;
-  filter: none;
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
   transition: filter 0.3s ease;
 }
-
 .contact-icons a:hover img {
-  filter: brightness(0.8); /* subtle hover effect */
+  filter: brightness(0) invert(0.6) sepia(1) saturate(5) hue-rotate(140deg);
 }
 
 /* Main content */
 .main-content {
-  margin-left: 400px; /* fixed from sidebar width */
-  padding: 40px;
-  width: 900px;
+  margin-left: 320px;
+  padding: 40px 60px 80px 60px;
+  flex-grow: 1;
+  max-width: 900px;
 }
 
-/* Sections */
-.section {
-  margin-bottom: 80px;
-}
-
-/* Section headings */
+/* Section Headings */
 .section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
   color: #64ffda;
-  border-bottom: 2px solid #64ffda;
-  padding-bottom: 5px;
+  border-bottom: 3px solid #64ffda;
+  padding-bottom: 6px;
 }
 
-/* Projects list - vertical stacking */
+/* Bio Section */
+.bio-section {
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+  color: #ddd;
+  font-style: normal;
+  max-width: 700px;
+}
+
+/* Skills Section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.skill-item {
+  background-color: #292929;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #64ffda;
+  user-select: none;
+  box-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: #3d3d3d;
+}
+
+/* Projects List */
 .projects-list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 35px;
 }
 
-/* Each project row */
+/* Project Row */
 .project-row {
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  gap: 25px;
   background-color: #1e1e1e;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 25px;
+  border-radius: 10px;
   border: 1px solid #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  transition: box-shadow 0.3s ease;
 }
 
-/* Project image */
+.project-row:hover {
+  box-shadow: 0 4px 12px rgba(100,255,218,0.6);
+}
+
 .project-img {
-  flex-shrink: 0;
-  width: 180px;
-  height: 120px;
+  width: 220px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
-/* Project details */
 .project-details {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-details h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #64ffda;
 }
 
 .project-details p {
-  margin-bottom: 15px;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+
+.project-details .tools {
+  font-size: 0.9rem;
+  color: #8fdcd4;
+  margin-bottom: 10px;
+  font-style: italic;
 }
 
 .project-details a {
   color: #64ffda;
   font-weight: 600;
+  align-self: flex-start;
+  transition: color 0.3s ease;
+}
+
+.project-details a:hover {
+  color: #52d9b1;
 }
 
 /* Footer */
 .footer {
   margin-top: 60px;
   text-align: center;
-  color: #555;
   font-size: 0.9rem;
+  color: #555;
+  padding-bottom: 30px;
+  user-select: none;
 }
 
-/* Responsive: Stack project row vertically on small screens */
-@media (max-width: 600px) {
-  .main-content {
-    margin-left: 0;
-    width: auto;
-    padding: 20px;
-  }
+/* Responsive */
+@media (max-width: 960px) {
   .layout {
     flex-direction: column;
   }
@@ -187,23 +257,22 @@ a:hover {
     height: auto;
     border-right: none;
     border-bottom: 1px solid #333;
-    padding: 20px;
+    padding: 30px 15px;
   }
-  .projects-list {
-    gap: 20px;
+  .main-content {
+    margin-left: 0;
+    padding: 30px 20px;
+    max-width: 100%;
   }
   .project-row {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
   .project-img {
     width: 100%;
-    max-width: 300px;
-    height: auto;
+    height: 180px;
   }
-  .project-details {
-    margin-top: 15px;
+  .project-details a {
+    align-self: stretch;
+    text-align: center;
   }
 }
-
