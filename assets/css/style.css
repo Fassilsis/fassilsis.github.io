@@ -37,7 +37,7 @@ a:hover {
 
 /* Sidebar */
 .sidebar {
-  width: 300px;
+  width: 400px;
   background-color: #1e1e1e;
   padding: 40px 20px;
   display: flex;
@@ -115,7 +115,7 @@ a:hover {
 
 /* Main content */
 .main-content {
-  margin-left: 320px;
+  margin-left: 420px;
   padding: 40px 60px 80px 60px;
   flex-grow: 1;
   max-width: 900px;
@@ -139,29 +139,6 @@ a:hover {
   color: #ddd;
   font-style: normal;
   max-width: 700px;
-}
-
-/* Skills Section */
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;       /* allows items to move to the next line */
-  gap: 10px;             /* spacing between skill pills */
-  padding: 0;
-  margin-top: 10px;
-}
-
-.skill-item {
-  background-color: #64ffda;
-  color: #121212;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  white-space: nowrap;   /* keeps text in one line inside each pill */
-}
-
-.skill-item:hover {
-  background-color: #3d3d3d;
 }
 
 /* Projects List */
