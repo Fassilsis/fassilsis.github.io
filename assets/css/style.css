@@ -79,11 +79,11 @@ a:hover {
 }
 
 .sidebar .title {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   color: #aaa;
   margin-bottom: 30px;
   text-align: center;
-  font-style: italic;
+
 }
 
 /* Bio */
