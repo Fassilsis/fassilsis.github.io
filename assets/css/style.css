@@ -62,8 +62,8 @@ a:hover {
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 150px !important;
+  height: 150px !important;
   border-radius: 50%;
   border: 3px solid #64ffda;
   margin-bottom: 20px;
