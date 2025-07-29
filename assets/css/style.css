@@ -144,21 +144,20 @@ a:hover {
 /* Skills Section */
 .skills-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;       /* allows items to move to the next line */
+  gap: 10px;             /* spacing between skill pills */
+  padding: 0;
+  margin-top: 10px;
 }
 
 .skill-item {
-  background-color: #292929;
-  padding: 8px 16px;
+  background-color: #64ffda;
+  color: #121212;
+  padding: 6px 14px;
   border-radius: 20px;
-  font-size: 0.9rem;
   font-weight: 600;
-  color: #64ffda;
-  user-select: none;
-  box-shadow: 0 0 8px rgba(100, 255, 218, 0.3);
-  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+  white-space: nowrap;   /* keeps text in one line inside each pill */
 }
 
 .skill-item:hover {
