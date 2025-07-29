@@ -9,41 +9,25 @@ title: Portfolio
   <div class="sidebar">
     <img src="images/placeholder.jpg" alt="Profile Photo" class="profile-pic" />
     <h1>Fassil Yehuala</h1>
-    <p class="title">Data Analytics Engineer</p>
+    <p class="title">Analytics Engineer</p>
 
     <div class="about-text">
       <p>
-        Versatile Data Analyst with a unique blend of social policy training and hands-on experience in data visualization, engineering, and statistical analysis. Skilled at turning complex datasets into actionable insights using Python, SQL, Tableau, and dbt, with a proven track record across sectors and collaborative environments.
+I am an Analytics Engineer with a unique foundation in policy analysis, combined with practical experience in data analysis and engineering. My academic background in economics and policy analysis sharpened my analytical thinking and gave me strong skills in quantitative research, including regression analysis, program evaluation, and statistical modeling.
+
+In recent years, I have taken on technical roles where I have built and maintained scalable data pipelines, developed automated reporting systems, and supported decision-making through data visualization. I work with tools like SQL, Python, dbt, Power BI and Looker Studio, and have applied them in cloud environments. At datadice, I was involved in end-to-end data analytics projects, from data ingestion and transformation to dashboard creation and stakeholder collaboration.
+
+What sets me apart is my ability to move easily between strategic and technical work. I can explore complex datasets, create data models that reflect real business logic, and communicate insights clearly and effectively. I focus on delivering value through collaboration, precision, and a practical understanding of how data drives business impact.
       </p>
     </div>
-
     <div class="contact-icons">
       <a href="mailto:fassil.yehuala@gmail.com"><img src="/images/mail.png" alt="Email" /></a>
       <a href="https://github.com/fassilsis" target="_blank"><img src="/images/github.png" alt="GitHub" /></a>
       <a href="https://linkedin.com/in/fassilsis" target="_blank"><img src="/images/linkedin.png" alt="LinkedIn" /></a>
     </div>
   </div>
-
   <!-- Main Content -->
   <div class="main-content">
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <span class="skill-item">Python</span>
-        <span class="skill-item">SQL</span>
-        <span class="skill-item">Tableau</span>
-        <span class="skill-item">dbt</span>
-        <span class="skill-item">BigQuery</span>
-        <span class="skill-item">Excel</span>
-        <span class="skill-item">AWS</span>
-        <span class="skill-item">Airflow</span>
-        <span class="skill-item">Data Visualization</span>
-        <span class="skill-item">Statistical Analysis</span>
-      </div>
-    </section>
-
-    
     <!-- Projects Section -->
     <section id="projects" class="section">
       <h2>Projects</h2>
@@ -60,7 +44,6 @@ title: Portfolio
         {% endfor %}
       </div>
     </section>
-
     <footer class="footer">
       <p>&copy; 2025 Fassil Yehuala. All rights reserved.</p>
     </footer>
