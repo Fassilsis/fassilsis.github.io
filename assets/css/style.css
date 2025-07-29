@@ -1,3 +1,4 @@
+/* Reset & base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,27 +9,30 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #121212;
   color: #e0e0e0;
-  display: flex;
-  justify-content: center;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
+/* Links */
 a {
   color: #64ffda;
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
   text-decoration: underline;
+  outline: none;
 }
 
-/* Overall Layout */
+/* Layout container */
 .layout {
   display: flex;
-  min-height: 100vh;
-  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* Left Sidebar */
+/* Sidebar styles */
 .sidebar {
   width: 250px;
   background-color: #1e1e1e;
@@ -36,10 +40,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: sticky;
-  top: 0;
-  height: 100vh;
   border-right: 1px solid #333;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .profile-pic {
@@ -48,16 +54,17 @@ a:hover {
   border-radius: 50%;
   border: 3px solid #64ffda;
   margin-bottom: 20px;
+  object-fit: cover;
 }
 
 .sidebar h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 5px;
   text-align: center;
 }
 
 .sidebar .title {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #aaa;
   margin-bottom: 30px;
   text-align: center;
@@ -69,39 +76,57 @@ a:hover {
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  align-items: center;
+  padding-left: 0;
+  text-align: center;
 }
 
-/* Right Main Content */
+.nav-links a {
+  display: block;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+/* Main content */
 .main-content {
-  flex-grow: 1;
-  padding: 60px 40px;
+  margin-left: 250px; /* same as sidebar width */
+  padding: 40px 5%;
+  width: 90vw; /* Use about 90% of viewport width */
+  overflow-y: auto;
+  height: 100vh;
 }
 
+/* Section styling */
 .section {
-  max-width: 1000px;
-  margin: 0 auto 80px auto;
+  margin-bottom: 80px;
+  max-width: 900px;
 }
 
+/* Section headings */
 .section h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 20px;
   color: #64ffda;
+  border-bottom: 2px solid #64ffda;
+  padding-bottom: 5px;
 }
 
-/* Projects Grid */
+/* Projects grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
+/* Project cards */
 .project-card {
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #333;
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -113,36 +138,60 @@ a:hover {
   height: 180px;
   object-fit: cover;
   border-radius: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  flex-shrink: 0;
 }
 
-.contact p {
-  margin: 10px 0;
+/* Contact section */
+#contact p {
+  margin-bottom: 12px;
   word-break: break-word;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
   }
-
+  
   .sidebar {
+    position: relative;
     width: 100%;
     height: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
+    padding: 20px 10px;
     border-right: none;
     border-bottom: 1px solid #333;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-
+  
+  .profile-pic {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0;
+  }
+  
+  .sidebar h1 {
+    font-size: 1.2rem;
+    margin: 0 15px 0 0;
+  }
+  
+  .sidebar .title {
+    display: none;
+  }
+  
   .nav-links {
     flex-direction: row;
     gap: 20px;
+    width: auto;
+    margin-left: auto;
   }
-
+  
   .main-content {
-    padding: 30px 20px;
+    margin-left: 0;
+    width: 100vw;
+    padding: 20px 5%;
+    height: auto;
   }
 }
