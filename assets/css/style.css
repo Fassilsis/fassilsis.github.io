@@ -153,12 +153,12 @@ a:hover {
   margin-bottom: 30px;
   text-decoration: none;
   color: inherit;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-row:hover {
   background-color: #222;
-  box-shadow: 0 0 10px rgba(100, 255, 218, 0.2);
+  box-shadow: 0 0 12px rgba(100, 255, 218, 0.15);
   cursor: pointer;
 }
 
