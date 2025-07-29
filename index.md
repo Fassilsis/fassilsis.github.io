@@ -12,7 +12,7 @@ title: Portfolio
     <p class="title">Analytics Engineer</p>
     <div class="about-text">
     <p>
-      With a background in economics and public policy, I bring strong analytical thinking and hands-on experience in data modeling, analysis, and pipeline development. My academic training sharpened my skills in data analysis, statistical modeling, and quantitative research.
+      With a background in economics and policy analysis, I bring strong analytical thinking and hands-on experience in data modeling, analysis, pipeline development, and visualization. My academic training sharpened my skills in data analysis, statistical modeling, and quantitative research.
     </p>
     <p>
       In recent years, I have taken on technical roles where I built and maintained scalable end-to-end data pipelines, developed automated reporting systems, and supported decision-making through data visualization.
