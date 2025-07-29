@@ -19,9 +19,9 @@ title: Portfolio
     </div>
 
     <div class="contact-icons">
-      <a href="mailto:fassil@example.com"><img src="/images/email-icon.png" alt="Email" /></a>
-      <a href="https://github.com/fassilsis" target="_blank"><img src="/images/github-icon.png" alt="GitHub" /></a>
-      <a href="https://linkedin.com/in/fassilsis" target="_blank"><img src="/images/linkedin-icon.png" alt="LinkedIn" /></a>
+      <a href="mailto:fassil.yehuala@gmail.com"><img src="/images/mail.png" alt="Email" /></a>
+      <a href="https://github.com/fassilsis" target="_blank"><img src="/images/github.png" alt="GitHub" /></a>
+      <a href="https://linkedin.com/in/fassilsis" target="_blank"><img src="/images/linkedin.png" alt="LinkedIn" /></a>
     </div>
   </div>
 
