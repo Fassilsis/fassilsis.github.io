@@ -88,9 +88,10 @@ a:focus {
 
 /* Main content */
 .main-content {
-  margin-left: 250px; /* sidebar width */
-  padding: 40px 5%;
-  width: 100%;
+  margin-left: 250px;
+  padding: 40px;
+  max-width: 1200px;
+  width: calc(100% - 250px);
 }
 
 
@@ -112,7 +113,7 @@ a:focus {
 /* Projects grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
