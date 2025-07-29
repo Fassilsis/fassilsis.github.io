@@ -103,14 +103,16 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.contact-icons a img {
-  width: 28px;
-  height: 28px;
+.contact-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
   filter: none;
-  transition: filter 0.3s ease;
+  background: none;
+  border: none;
 }
 .contact-icons a:hover img {
-  filter: brightness(0.8);
+  filter: none;
 }
 
 /* Main content */
@@ -130,15 +132,6 @@ a:hover {
   color: #64ffda;
   border-bottom: 3px solid #64ffda;
   padding-bottom: 6px;
-}
-
-/* Bio Section */
-.bio-section {
-  margin-bottom: 50px;
-  font-size: 1.1rem;
-  color: #ddd;
-  font-style: normal;
-  max-width: 700px;
 }
 
 /* Projects List */
