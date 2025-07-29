@@ -7,7 +7,7 @@ title: Portfolio
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <img src="images/placeholder.jpg" alt="Profile Photo" class="profile-pic" />
+    <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic" />
     <h1>Fassil Yehuala</h1>
     <p class="title">Analytics Engineer</p>
     <div class="about-text">
