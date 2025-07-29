@@ -1,6 +1,6 @@
 - title: Sales Dashboard
   description: An interactive dashboard built in Power BI to analyze sales trends across regions.
-  image: https://raw.githubusercontent.com/yourusername/your-repo/main/images/ecommerce.jpg
+  image: images/ecommerce.jpg
   link: https://github.com/yourusername/sales-dashboard
 
 - title: Customer Churn Analysis
