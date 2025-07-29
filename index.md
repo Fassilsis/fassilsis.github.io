@@ -1,10 +1,14 @@
+---
+layout: default
+title: Portfolio
+---
 
 <div class="layout">
 
   <!-- Sidebar -->
   <div class="sidebar">
     <img src="images/placeholder.jpg" alt="Profile Photo" class="profile-pic" />
-    <h1>{{ site.title }}</h1>
+    <h1>Fassil Sisay</h1>
     <p class="title">Data Analytics Engineer</p>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -41,9 +45,9 @@
 
     <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-      <p>GitHub: <a href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">{{ site.linkedin_username }}</a></p>
+      <p>Email: <a href="mailto:fassil@example.com">fassil@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/fassilsis" target="_blank">fassilsis</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/fassilsis" target="_blank">fassilsis</a></p>
     </section>
 
   </div>
