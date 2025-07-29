@@ -1,5 +1,5 @@
 - title: Sales Dashboard
-  description: An interactive dashboard built in Power BI to analyze sales trends across regions.
+  description: This project is a complete redesign of the Sales & Marketing dashboard, originally introduced in Microsoft's "Dashboard in a Day" (DIAD) workshop. The report was rebuilt from scratch with a focus on professional design, clean data modeling, insightful KPIs, and a modern user experience — suitable for real-world stakeholders and business decision-makers.
   image: images/ecommerce.jpg
   link: https://github.com/fassilsis/sales-dashboard
 
