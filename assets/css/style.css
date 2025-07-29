@@ -158,6 +158,7 @@ a:hover {
 
 .project-row:hover {
   background-color: #222;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.2);
   cursor: pointer;
 }
 
