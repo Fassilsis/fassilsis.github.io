@@ -1,4 +1,22 @@
 title: Data Analytics Engineer Portfolio
-description: Portfolio site of a Data Analytics Engineer
-theme: minima
+email: your.email@example.com
+description: >- # this means multi-line text
+  Portfolio of a passionate Data Analytics Engineer skilled in ETL, visualization, and modeling.
+baseurl: "" # leave empty if deploying to root of domain
+url: "https://yourusername.github.io" # your site URL
+
 markdown: kramdown
+theme: minima # or any theme you use
+
+# Optional: plugins you want to use
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Optional: defaults for layouts or collections
+defaults:
+  - scope:
+      path: ""  # all files
+      type: "pages"
+    values:
+      layout: default
