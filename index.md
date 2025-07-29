@@ -10,14 +10,15 @@ title: Portfolio
     <img src="images/placeholder.jpg" alt="Profile Photo" class="profile-pic" />
     <h1>Fassil Yehuala</h1>
     <p class="title">Analytics Engineer</p>
-
     <div class="about-text">
       <p>
-I am an Analytics Engineer with a unique foundation in policy analysis, combined with practical experience in data analysis and engineering. My academic background in economics and policy analysis sharpened my analytical thinking and gave me strong skills in quantitative research, including regression analysis, program evaluation, and statistical modeling.
-
-In recent years, I have taken on technical roles where I have built and maintained scalable data pipelines, developed automated reporting systems, and supported decision-making through data visualization. I work with tools like SQL, Python, dbt, Power BI and Looker Studio, and have applied them in cloud environments. At datadice, I was involved in end-to-end data analytics projects, from data ingestion and transformation to dashboard creation and stakeholder collaboration.
-
-What sets me apart is my ability to move easily between strategic and technical work. I can explore complex datasets, create data models that reflect real business logic, and communicate insights clearly and effectively. I focus on delivering value through collaboration, precision, and a practical understanding of how data drives business impact.
+      I am an Analytics Engineer with a unique foundation in policy analysis, combined with practical experience in data analysis and engineering. My academic background in economics and policy analysis sharpened my analytical thinking and gave me strong skills in quantitative research, including regression analysis, program evaluation, and statistical modeling.
+      </p>
+      <p>
+      In recent years, I have taken on technical roles where I have built and maintained scalable data pipelines, developed automated reporting systems, and supported decision-making through data visualization. I work with tools like SQL, Python, dbt, Power BI and Looker Studio, and have applied them in cloud environments. At datadice, I was involved in end-to-end data analytics projects, from data ingestion and transformation to dashboard creation and stakeholder collaboration.
+      </p>
+      <p>
+      What sets me apart is my ability to move easily between strategic and technical work. I can explore complex datasets, create data models that reflect real business logic, and communicate insights clearly and effectively. I focus on delivering value through collaboration, precision, and a practical understanding of how data drives business impact.
       </p>
     </div>
     <div class="contact-icons">
