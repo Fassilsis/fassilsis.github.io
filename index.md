@@ -39,6 +39,12 @@ title: Portfolio
           <div class="project-details">
             <h3>{{ project.title }}</h3>
             <p>{{ project.description }}</p>
+            <h3>Key Features:</h3>
+              <ul>
+                {% for feature in project.key_features %}
+                  <li>{{ feature }}</li>
+                {% endfor %}
+              </ul>
             <span class="project-link">🔗 View Project on GitHub</span>
           </div>
         </a>
