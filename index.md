@@ -39,8 +39,8 @@ title: Portfolio
           <div class="project-details">
             <h3>{{ project.title }}</h3>
             <p>{{ project.description }}</p>
-            <h3>Key Features:</h3>
-              <ul>
+            <h4 style="margin-bottom: 0.3em;">Key Features:</h4>
+              <ul style="font-size: 0.75em; margin-left: 1.5em; color: #555;">
                 {% for feature in project.key_features %}
                   <li>{{ feature }}</li>
                 {% endfor %}
