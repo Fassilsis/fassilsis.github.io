@@ -162,14 +162,11 @@ a:hover {
   cursor: pointer;
 }
 
+/* Prevent text from changing appearance */
+.project-row,
 .project-row * {
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-row:hover * {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .project-img {
