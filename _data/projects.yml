@@ -10,7 +10,7 @@
     - Product pricing analysis vs MSRP
     - Regional performance using map visuals
     - Manufacturer-level revenue, units sold, and discount trends
-  image: screenshots/executive-summary-with-filters-on.png
+  image: sales-dashboard/screenshots/executive-summary-with-filters-on.png
   link: https://github.com/fassilsis/sales-dashboard
 
 - title: Customer Churn Analysis
