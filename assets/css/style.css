@@ -162,6 +162,16 @@ a:hover {
   cursor: pointer;
 }
 
+.project-row * {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-row:hover * {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-img {
   width: 180px;
   height: 120px;
