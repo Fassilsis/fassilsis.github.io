@@ -141,6 +141,13 @@ a:hover {
   gap: 35px;
 }
 
+/* Projects tools */
+.projects-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 /* Project Row */
 .project-row {
   display: flex;
