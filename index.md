@@ -46,7 +46,7 @@ title: Fassil's Portfolio
                 {% endfor %}
               </ul>
                 {% if project.tools %}
-                <div style="font-size: 0.65em; color: #52d9b1; margin-top: 0.5em; display: flex; align-items: center; gap: 0.3em;">
+                <div style="font-size: 0.65em; color: #52d9b1 !important; margin-top: 0.5em; display: flex; align-items: center; gap: 0.3em;">
                   <span>Tools: {{ project.tools | join: ", " }}</span>
                 </div>
                 {% endif %}
