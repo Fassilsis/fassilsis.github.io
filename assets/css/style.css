@@ -37,7 +37,7 @@ a:hover {
 
 /* Sidebar */
 .sidebar {
-  width: 400px;
+  width: 420px;
   background-color: #1e1e1e;
   padding: 40px 20px;
   display: flex;
@@ -117,7 +117,7 @@ a:hover {
 
 /* Main content */
 .main-content {
-  margin-left: 420px;
+  margin-left: 430px;
   padding: 40px 60px 80px 60px;
   flex-grow: 1;
   max-width: 900px;
@@ -145,7 +145,7 @@ a:hover {
 .project-row {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
   background-color: #1e1e1e;
   border: 1px solid #333;
   border-radius: 8px;
