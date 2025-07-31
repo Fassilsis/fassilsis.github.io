@@ -4,7 +4,7 @@
     A 4-page interactive Power BI report built using Microsoft's sample dataset. This project analyzes sales, pricing, geographic performance, and manufacturer contributions for a fictional electronics company. It highlights key KPIs, identifies pricing gaps, and uncovers regional trends to support strategic business decisions.
   key_features:
     - Executive summary with dynamic filters and high-level KPIs
-    - Product pricing analysis vs MSRP
+    - Product pricing analysis
     - Regional performance using map visuals
     - Manufacturer-level revenue, units sold, and discount trends
   image: images/executive-summary-with-filters-on.png
