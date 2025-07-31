@@ -45,7 +45,7 @@ title: Fassil's Portfolio
                   <li>{{ feature }}</li>
                 {% endfor %}
               </ul>
-            <p>{{ project.tools }}</p>
+            <span class="project-tools"> project.tools </span>
             <span class="project-link">🔗 View Project on GitHub</span>
           </div>
         </a>
