@@ -45,7 +45,11 @@ title: Fassil's Portfolio
                   <li>{{ feature }}</li>
                 {% endfor %}
               </ul>
-            <span class="project-tools"> project.tools </span>
+                {% if project.tools %}
+                <div style="font-size: 0.65em; color: #777; margin-top: 0.5em; display: flex; align-items: center; gap: 0.3em;">
+                  <span>Tools: {{ project.tools | join: ", " }}</span>
+                </div>
+                {% endif %}
             <span class="project-link">🔗 View Project on GitHub</span>
           </div>
         </a>
@@ -53,7 +57,7 @@ title: Fassil's Portfolio
       </div>
     </section>
     <footer class="footer">
-      <p>&copy; 2025 Fassil Yehuala. All rights reserved.</p>
+      <p>&copy; {{ "now" | date: "%Y" }} Fassil Yehuala. All rights reserved.</p>
     </footer>
 
   </div>
