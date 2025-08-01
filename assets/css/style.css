@@ -277,12 +277,6 @@ a:hover {
   border-radius: 6px;
 }
 
-.readme-body {
-  color: #ddd;
-  line-height: 1.8;
-  margin-bottom: 40px;
-}
-
 .tools-used h3 {
   color: #64ffda;
   margin-bottom: 10px;
@@ -322,6 +316,7 @@ a:hover {
   font-size: 1rem;
   line-height: 1.8;
   color: #ccc;
+  margin-bottom: 40px;
 }
 
 .readme-body h1,
