@@ -300,7 +300,6 @@ a:hover {
   font-size: 0.9rem;
   text-decoration: none;
   font-style: italic;
-  margin-top: 2em;
 }
 .github-link a:hover {
   color: #52d9b1;
@@ -354,7 +353,9 @@ a:hover {
 .readme-body a:hover {
   text-decoration: underline;
 }
-
+.tools-used + .github-link {
+  margin-top: 1.5em;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
