@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="layout">
+  <!-- Optional: Sidebar or keep it clean -->
+  <div class="main-content">
+
+    <div class="project-blog-post">
+
+      <a href="/" class="back-link">← Back to Home</a>
+
+      <h1>{{ page.title }}</h1>
+      <p class="project-description">{{ page.description }}</p>
+
+      <!-- Screenshots -->
+      {% if page.screenshots %}
+      <div class="screenshots">
+        {% for image in page.screenshots %}
+        <img src="{{ image }}" alt="Screenshot of {{ page.title }}">
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <!-- Main content (Markdown body) -->
+      <div class="readme-body">
+        {{ content }}
+      </div>
+
+      <!-- Tools -->
+      {% if page.tools %}
+      <div class="tools-used">
+        <h3>🛠️ Tools Used</h3>
+        <ul>
+          {% for tool in page.tools %}
+          <li>{{ tool }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <!-- GitHub link -->
+      {% if page.github %}
+      <div class="github-link">
+        <a href="{{ page.github }}" target="_blank">🔗 View this Project on GitHub</a>
+      </div>
+      {% endif %}
+
+    </div>
+
+  </div>
+</div>
