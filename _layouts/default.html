@@ -17,43 +17,47 @@
 
   <body>
       
-     <img
+      <img
         id="theme-toggle"
-        src="/assets/images/moon.svg"
+        src="/images/night-mode.png"
         alt="Toggle Theme"
-        width="30"
-        height="30"
-        style="cursor: pointer; position: absolute; top: 20px; right: 20px; z-index: 1000;"
-     />
+        width="35"
+        height="35"
+        style="cursor: pointer; position: absolute; top: 100px; right: 20px; z-index: 1000;"
+      />
 
       <!--<button id="theme-toggle" aria-label="Toggle Light and Dark mode">Toggle Light/Dark Mode</button> -->
     
       {{ content }}
       
       <script>
-
         const body = document.body;
         const toggleBtn = document.getElementById('theme-toggle');
       
         function updateThemeIcon(theme) {
-          toggleBtn.src = theme === 'light' ? 'images/light.png' : 'images/night-mode.png';
+          toggleBtn.src = theme === 'light'
+            ? '/images/light.png'
+            : '/images/night-mode.png';
         }
-      // Apply saved theme on load
+      
+        // Apply saved theme on page load
         const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
+        const isLight = savedTheme === 'light';
+      
+        if (isLight) {
           body.classList.add('light');
-        } else {
-          body.classList.remove('light');
         }
       
-        updateThemeIcon(body.classList.contains('light') ? 'light' : 'dark');
+        updateThemeIcon(isLight ? 'light' : 'dark');
       
+        // Toggle theme on click
         toggleBtn.addEventListener('click', () => {
           body.classList.toggle('light');
           const newTheme = body.classList.contains('light') ? 'light' : 'dark';
           localStorage.setItem('theme', newTheme);
           updateThemeIcon(newTheme);
-        });
+          });
       </script>
+
   </body>
 </html>
