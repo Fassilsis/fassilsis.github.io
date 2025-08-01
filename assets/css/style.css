@@ -237,6 +237,7 @@ a:hover {
 
 /* for each project detail page */
 .project-page-container {
+  background-color: #121212;
   display: flex;
   justify-content: center;
   padding: 60px 20px;
@@ -245,6 +246,7 @@ a:hover {
 }
 
 .project-blog-post {
+  background-color: #1e1e1e;
   width: 100%;
   max-width: 1000px;
   background-color: #1e1e1e;
