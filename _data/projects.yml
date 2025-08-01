@@ -20,7 +20,7 @@
     - Sales overview with revenue, orders, and trends over time
     - Product-level analysis showing category revenue and profitability
     - Geographic insights including state and city sales and distribution centers
-  image: images/ecommerce.png
+  image: images/ecommerce.jpg
   link:  https://github.com/thelooker-ecommerce-dashboard
 
 - title: Customer Churn Analysis
