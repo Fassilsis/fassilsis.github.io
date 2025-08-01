@@ -258,13 +258,13 @@ a:hover {
   margin-bottom: 1.5em;
 }
 .project-blog-post h1 {
-  color: #64ffda;
+  color: var(--text-color);
   font-size: 2.4rem;
   margin-bottom: 15px;
 }
 
 .project-description {
-  color: #ccc;
+  color: var(--text-color)c;
   font-size: 1rem;
   margin-bottom: 30px;
 }
@@ -278,7 +278,7 @@ a:hover {
 }
 
 .tools-used h3 {
-  color: #64ffda;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 .tools-used ul {
@@ -286,11 +286,11 @@ a:hover {
 }
 .tools-used li {
   font-size: 0.95rem;
-  color: #aaa;
+  color: var(--text-color);
 }
 
 .github-link a {
-  color: #64ffda;
+  color: var(--text-color);
   font-size: 0.9rem;
   text-decoration: none;
   font-style: italic;
@@ -304,25 +304,25 @@ a:hover {
   display: inline-block;
   margin-bottom: 30px;
   font-size: 0.9rem;
-  color: #64ffda;
+  color: var(--text-color);
   text-decoration: none;
 }
 .back-link:hover {
   text-decoration: underline;
-  color: #52d9b1;
+  color: var(--text-color);
 }
 
 .readme-body {
   font-size: 1rem;
   line-height: 1.8;
-  color: #ccc;
+  color: var(--text-color);
   margin-bottom: 40px;
 }
 
 .readme-body h1,
 .readme-body h2,
 .readme-body h3 {
-  color: #64ffda;
+  color: var(--text-color);
   margin-top: 2em;
   margin-bottom: 1em;
 }
@@ -341,7 +341,7 @@ a:hover {
 }
 
 .readme-body a {
-  color: #64ffda;
+  color: var(--text-color);
   text-decoration: none;
 }
 
