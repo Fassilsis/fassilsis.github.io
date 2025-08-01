@@ -6,7 +6,7 @@
 }
 
 /* CSS Variables for themes */
-:root {a
+:root {
   --bg-color: #121212;
   --text-color: #e0e0e0;
   --sidebar-bg: #1e1e1e;
@@ -353,9 +353,7 @@ a:hover {
 .readme-body a:hover {
   text-decoration: underline;
 }
-.tools-used + .github-link {
-  margin-top: 1.5em;
-}
+
 
 /* Responsive */
 @media (max-width: 768px) {
