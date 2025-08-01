@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="project-detail">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.description }}</p>
+  
+  <section class="screenshots">
+    {% for image in page.screenshots %}
+      <img src="{{ image }}" alt="Screenshot for {{ page.title }}" />
+    {% endfor %}
+  </section>
+
+  <section class="readme-content">
+    {{ content }}
+  </section>
+
+  <section class="tools-used">
+    <h3>Tools Used</h3>
+    <ul>
+      {% for tool in page.tools %}
+        <li>{{ tool }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <a href="{{ page.github }}" target="_blank" class="github-link">🔗 View Project on GitHub</a>
+</div>
