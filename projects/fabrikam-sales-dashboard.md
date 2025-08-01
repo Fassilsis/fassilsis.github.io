@@ -7,6 +7,8 @@ tools:
   - DAX
   - Power Query
 github: https://github.com/fassilsis/sales-dashboard
+---
+
 📊 Power BI Case Study: Fabrikam Sales Dashboard
 
 Starting out in data analytics is about more than just mastering the tools. It’s about applying those tools to solve real business problems. That’s exactly what I set out to do with this project — building a comprehensive Power BI dashboard that simulates a real-world sales environment. For this, I worked with Fabrikam, a fictional electronics company created by Microsoft for training purposes. Since it’s a sandbox brand with realistic data, I had the freedom to dig into business questions without any real-world restrictions.
@@ -20,7 +22,7 @@ The dataset is based on Fabrikam, Inc., Microsoft’s fictional electronics bran
 
 | Executive Summary With Filters Applied | Product & Pricing |
 |----------------------------|-------------------|
-| ![]([https://github.com](https://raw.githubusercontent.com)/fassilsis/screenshots/executive-summary-with-filters-on.png) | ![](https://raw.githubusercontent.com/fassilsis/screenshots/ppa.png) |
+| ![](https://raw.githubusercontent.com/fassilsis/screenshots/executive-summary-with-filters-on.png) | ![](https://raw.githubusercontent.com/fassilsis/screenshots/ppa.png) |
 
 The final dashboard is organized into four key pages, each designed to answer specific business questions. The first page, Executive Summary, gives a high-level overview of total revenue, units sold, average prices, and sales trends over time. It also highlights market share by manufacturer and shows regional performance at a glance. Next, the Product and Pricing page dives into how pricing compares to MSRP, which customer segments rely on discounts the most, and revenue breakdowns by product category. 
 
