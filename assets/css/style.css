@@ -17,6 +17,17 @@
   --project-hover-bg: #e0e0e0;
   --project-hover-shadow: rgba(0, 122, 204, 0.3);
 }
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --sidebar-bg: #1e1e1e;
+  --link-color: #64ffda;
+  --link-hover-color: #52d9b1;
+  --border-color: #333;
+  --project-bg: #1e1e1e;
+  --project-hover-bg: #222;
+  --project-hover-shadow: rgba(100, 255, 218, 0.15);
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
