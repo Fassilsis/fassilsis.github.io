@@ -91,7 +91,7 @@ Here’s a quick look at what it all looks like in Power BI:
 
 | Regional Insights | Manufacturer View |
 |-------------------|-------------------|
-| ![](https://github.com/fassilsis/screenshots/gra.png) | ![](/screenshots/msi.png) |
+| ![](https://github.com/fassilsis/screenshots/gra.png) | ![](https://github.com/fassilsis/screenshots/msi.png) |
 
 ---
 
