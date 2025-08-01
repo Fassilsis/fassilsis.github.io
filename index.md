@@ -9,7 +9,6 @@ title: Fassil's Portfolio
   <div class="sidebar">
     <!-- Theme toggle button -->
     <button id="theme-toggle" aria-label="Toggle Light and Dark mode">Toggle Light/Dark Mode</button>
-
     <img src="images/profile.JPG" alt="Profile Photo" class="profile-pic" />
     <h1>Fassil Yehuala</h1>
     <p class="title">Data Analyst | Analytics Engineer</p>
@@ -30,7 +29,6 @@ title: Fassil's Portfolio
       <a href="https://linkedin.com/in/fassil-s-yehuala" target="_blank" rel="noopener noreferrer"><img src="/images/linkedin.png" alt="LinkedIn" /></a>
     </div>
   </div>
-
   <!-- Main Content -->
   <div class="main-content">
     <!-- Projects Section -->
@@ -60,7 +58,6 @@ title: Fassil's Portfolio
         {% endfor %}
       </div>
     </section>
-
     <footer class="footer">
       <p>&copy; {{ "now" | date: "%Y" }} Fassil Yehuala. All rights reserved.</p>
     </footer>
