@@ -218,11 +218,21 @@ a:hover {
   font-size: 0.85rem;
 }
 
+/* Updated for separate hover effect on GitHub link */
 .project-link {
   font-size: 0.75rem;
   color: var(--link-color);
   opacity: 0.8;
   font-style: italic;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.project-link:hover {
+  color: var(--link-hover-color);
+  opacity: 1;
+  text-decoration: underline;
 }
 
 /* Footer */
