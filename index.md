@@ -63,7 +63,6 @@ title: Fassil's Portfolio
     </footer>
   </div>
 </div>
-
 <script>
   // Theme toggle logic
   const toggleBtn = document.getElementById('theme-toggle');
@@ -82,7 +81,6 @@ title: Fassil's Portfolio
       localStorage.setItem('theme', 'dark');
     }
   });
-
   // Click handler for project rows to open detailed project page
   document.querySelectorAll('.project-row').forEach(row => {
     row.addEventListener('click', (e) => {
