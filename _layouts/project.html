@@ -16,7 +16,7 @@ layout: default
         {{ page.date | date: "%B %-d, %Y" }}
         • 
         {% assign words = content | number_of_words %}
-        {% assign read_time = words | divided_by:200 | ceil %}
+        {% assign read_time = words | divided_by:150 | ceil %}
         {{ read_time }} min read
       </p>
 
