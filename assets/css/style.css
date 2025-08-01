@@ -48,7 +48,7 @@ a:hover {
 
 /* Sidebar */
 .sidebar {
-  width: 420px;
+  width: 430px;
   background-color: var(--sidebar-bg);
   padding: 40px 20px;
   display: flex;
@@ -91,8 +91,8 @@ a:hover {
 }
 
 .profile-pic {
-  width: 150px !important;
-  height: 150px !important;
+  width: 120px !important;
+  height: 120px !important;
   border-radius: 50%;
   border: 3px solid var(--link-color);
   margin-bottom: 20px;
