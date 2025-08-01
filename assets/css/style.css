@@ -354,6 +354,9 @@ a:hover {
   text-decoration: underline;
 }
 
+.tools-used + .github-link {
+  margin-top: 1.5em;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
