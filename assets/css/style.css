@@ -5,17 +5,17 @@
   padding: 0;
 }
 
-/* CSS Variables for themes */
+/* Light mode (default) variables */
 :root {
-  --bg-color: #121212;
-  --text-color: #e0e0e0;
-  --sidebar-bg: #1e1e1e;
-  --link-color: #64ffda;
-  --link-hover-color: #52d9b1;
-  --border-color: #333;
-  --project-bg: #1e1e1e;
-  --project-hover-bg: #222;
-  --project-hover-shadow: rgba(100, 255, 218, 0.15);
+  --bg-color: #f5f5f5;
+  --text-color: #222;
+  --sidebar-bg: #fff;
+  --link-color: #007acc;
+  --link-hover-color: #005a99;
+  --border-color: #ccc;
+  --project-bg: #fff;
+  --project-hover-bg: #e0e0e0;
+  --project-hover-shadow: rgba(0, 122, 204, 0.3);
 }
 
 body {
@@ -240,14 +240,14 @@ a:hover {
   display: flex;
   justify-content: center;
   padding: 60px 20px;
-  background-color: #121212;
+  background-color: var(--bg-color);
   width: 100%;
 }
 
 .project-blog-post {
   width: 100%;
   max-width: 1000px;
-  background-color: #1e1e1e;
+  background-color: var(--project-bg);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(100, 255, 218, 0.07);
@@ -258,13 +258,13 @@ a:hover {
   margin-bottom: 1.5em;
 }
 .project-blog-post h1 {
-  color: #64ffda;
+  color: var(--link-color);
   font-size: 2.4rem;
   margin-bottom: 15px;
 }
 
 .project-description {
-  color: #ccc;
+  color: var(--text-color);
   font-size: 1rem;
   margin-bottom: 30px;
 }
@@ -278,13 +278,13 @@ a:hover {
 }
 
 .readme-body {
-  color: #ddd;
+  color: var(--text-color);
   line-height: 1.8;
   margin-bottom: 40px;
 }
 
 .tools-used h3 {
-  color: #64ffda;
+  color: var(--link-color);
   margin-bottom: 10px;
 }
 .tools-used ul {
@@ -296,13 +296,13 @@ a:hover {
 }
 
 .github-link a {
-  color: #64ffda;
+  color: var(--link-color);
   font-size: 0.9rem;
   text-decoration: none;
   font-style: italic;
 }
 .github-link a:hover {
-  color: #52d9b1;
+  color: var(--link-hover-color);
   text-decoration: underline;
 }
 
@@ -310,24 +310,18 @@ a:hover {
   display: inline-block;
   margin-bottom: 30px;
   font-size: 0.9rem;
-  color: #64ffda;
+  color: var(--link-color);
   text-decoration: none;
 }
 .back-link:hover {
   text-decoration: underline;
-  color: #52d9b1;
-}
-
-.readme-body {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #ccc;
+  color: var(--link-hover-color);
 }
 
 .readme-body h1,
 .readme-body h2,
 .readme-body h3 {
-  color: #64ffda;
+  color: var(--link-color);
   margin-top: 2em;
   margin-bottom: 1em;
 }
@@ -346,13 +340,14 @@ a:hover {
 }
 
 .readme-body a {
-  color: #64ffda;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 .readme-body a:hover {
   text-decoration: underline;
 }
+
 .tools-used + .github-link {
   margin-top: 1.5em;
 }
@@ -388,15 +383,17 @@ a:hover {
   }
 }
 
-/* Light theme overrides */
-body.light {
-  --bg-color: #f5f5f5;
-  --text-color: #222;
-  --sidebar-bg: #fff;
-  --link-color: #007acc;
-  --link-hover-color: #005a99;
-  --border-color: #ccc;
-  --project-bg: #fff;
-  --project-hover-bg: #e0e0e0;
-  --project-hover-shadow: rgba(0, 122, 204, 0.3);
+/* Dark mode overrides via media query */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --sidebar-bg: #1e1e1e;
+    --link-color: #64ffda;
+    --link-hover-color: #52d9b1;
+    --border-color: #333;
+    --project-bg: #1e1e1e;
+    --project-hover-bg: #222;
+    --project-hover-shadow: rgba(100, 255, 218, 0.15);
+  }
 }
