@@ -1,5 +1,4 @@
 - title: "Fabrikam, Inc. Sales & Performance Dashboard"
-  slug: fabrikam-inc.-sales-performance-dashboard
   tools: Power BI | DAX | Power Query
   description: >
     A 4-page interactive Power BI report built using Microsoft's sample dataset. This project analyzes sales, pricing, geographic performance, and manufacturer contributions for a fictional electronics company. It highlights key KPIs, identifies pricing gaps, and uncovers regional trends to support strategic business decisions.
