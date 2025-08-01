@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Fabrikam Sales Dashboard
+title: 📊 Power BI Case Study: Fabrikam Sales Dashboard
 slug: fabrikam-sales-dashboard
 tools:
   - Power BI Desktop
@@ -9,7 +9,7 @@ tools:
 github: https://github.com/fassilsis/sales-dashboard
 ---
 
-📊 Power BI Case Study: Fabrikam Sales Dashboard
+
 
 Starting out in data analytics is about more than just mastering the tools. It’s about applying those tools to solve real business problems. That’s exactly what I set out to do with this project — building a comprehensive Power BI dashboard that simulates a real-world sales environment. For this, I worked with Fabrikam, a fictional electronics company created by Microsoft for training purposes. Since it’s a sandbox brand with realistic data, I had the freedom to dig into business questions without any real-world restrictions.
 💡 Why I Built This
