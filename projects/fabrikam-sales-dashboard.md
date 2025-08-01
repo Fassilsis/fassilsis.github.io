@@ -48,8 +48,3 @@ If you’re hiring or just want to chat about dashboards, data, or analytics, fe
 If you want to check out the `.pbix` file or dig through the setup, feel free to explore the GitHub repo:
 
 🔗 [View Project on GitHub](https://github.com/fassilsis/sales-dashboard)
-
----
-
-Thanks for reading!  
-Let me know what you think or connect with me on [LinkedIn](https://linkedin.com/in/fassil-s-yehuala) — always happy to talk data, design, or dashboards.
