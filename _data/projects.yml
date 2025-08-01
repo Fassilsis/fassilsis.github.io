@@ -1,6 +1,6 @@
 - title: "Power BI Case Study: Fabrikam Sales Dashboard"
   slug: fabrikam-sales-dashboard
-  tools: Power BI | DAX | Power Query
+  tools: Power BI | DAX | Power Query | Fabric
   description: >
     A 4-page interactive Power BI report built using Microsoft's sample dataset. This project analyzes sales, pricing, geographic performance, and manufacturer contributions for a fictional electronics company. It highlights key KPIs, identifies pricing gaps, and uncovers regional trends to support strategic business decisions.
   key_features:
@@ -10,6 +10,18 @@
     - Manufacturer-level revenue, units sold, and discount trends
   image: images/executive-summary-with-filters-on.png
   link: https://github.com/fassilsis/sales-dashboard
+
+- title: "Ecommerce Dashboard: TheLooker Dataset Analysis"
+  slug: thelooker-ecommerce-dashboard
+  tools: BigQuery | SQL | Looker Studio | Google Cloud Platform
+  description: >
+    A 3-page interactive dashboard built using a denormalized table from TheLooker ecommerce dataset in BigQuery. This project provides insights into sales performance, product profitability, and geographic distribution. It enables dynamic filtering across visuals to support data-driven business decisions in an ecommerce setting.
+  key_features:
+    - Sales overview with revenue, orders, and trends over time
+    - Product-level analysis showing category revenue and profitability
+    - Geographic insights including state and city sales and distribution centers
+  image: images/ecommerce.png
+  link:  https://github.com/thelooker-ecommerce-dashboard
 
 - title: Customer Churn Analysis
   description: Logistic regression model in Python to predict customer churn using telecom data.
