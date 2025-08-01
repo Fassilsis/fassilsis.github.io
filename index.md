@@ -8,7 +8,7 @@ title: Fassil's Portfolio
   <!-- Sidebar -->
   <div class="sidebar">
     <!-- Theme toggle button -->
-    <button id="theme-toggle" aria-label="Toggle Light and Dark mode">Toggle Light/Dark Mode</button>
+    <!-- <button id="theme-toggle" aria-label="Toggle Light and Dark mode">Toggle Light/Dark Mode</button> -->
     <img src="images/profile.JPG" alt="Profile Photo" class="profile-pic" />
     <h1>Fassil Yehuala</h1>
     <p class="title">Data Analyst | Analytics Engineer</p>
