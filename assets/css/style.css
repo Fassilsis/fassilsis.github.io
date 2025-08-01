@@ -235,6 +235,78 @@ a:hover {
   user-select: none;
 }
 
+/* for each project detail page */
+.project-blog-post {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(100, 255, 218, 0.07);
+}
+
+.project-blog-post h1 {
+  color: #64ffda;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.project-blog-post img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.readme-body {
+  color: #ddd;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.tools-used h3 {
+  color: #64ffda;
+  margin-bottom: 10px;
+}
+.tools-used ul {
+  padding-left: 1.5em;
+}
+.tools-used li {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.github-link a {
+  color: #64ffda;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-style: italic;
+}
+.github-link a:hover {
+  color: #52d9b1;
+  text-decoration: underline;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  color: #64ffda;
+  text-decoration: none;
+}
+.back-link:hover {
+  text-decoration: underline;
+  color: #52d9b1;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .layout {
