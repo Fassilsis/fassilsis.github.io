@@ -16,6 +16,29 @@
   </head>
 
   <body>
+      <button id="theme-toggle" aria-label="Toggle Light and Dark mode">Toggle Light/Dark Mode</button>
+    
+      {{ content }}
+      
+      <script>
+        // Apply saved theme on load
+        const body = document.body;
+        if (localStorage.getItem('theme') === 'light') {
+          body.classList.add('light');
+        } else {
+          body.classList.remove('light');
+        }
+    
+        // Toggle theme and save preference
+        const toggleBtn = document.getElementById('theme-toggle');
+        toggleBtn.addEventListener('click', () => {
+          body.classList.toggle('light');
+          if (body.classList.contains('light')) {
+            localStorage.setItem('theme', 'light');
+          } else {
+            localStorage.setItem('theme', 'dark');
+          }
+        });
     {{ content }}
   </body>
 </html>
