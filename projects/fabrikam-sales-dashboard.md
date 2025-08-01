@@ -21,7 +21,6 @@ I wanted to go beyond tutorials and challenge myself with a project that reflect
 
 This dashboard became a way to practice those skills in a hands-on way. It allowed me to create an interactive report that tells a story from the national level down to individual products. My focus was not only on making the visuals look good. It was also about making the data clear, meaningful, and actionable.
 
-
 ## About the Dataset
 
 I wanted to go beyond tutorials and challenge myself with a project that reflects real business challenges. These include understanding sales performance, analyzing pricing strategies, and exploring geographic trends.
@@ -29,7 +28,6 @@ I wanted to go beyond tutorials and challenge myself with a project that reflect
 This dashboard became a way to practice those skills in a hands-on way. It allowed me to create an interactive report that tells a story from the national level down to individual products. My focus was not only on making the visuals look good. It was also about making the data clear, meaningful, and actionable.
 
 ## What the report Covers
-
 
 The final report is made up of four main pages. Each one is designed to answer specific business questions.
 
@@ -41,7 +39,6 @@ The second page is Product and Pricing. This section compares actual prices to t
 
 ![](https://raw.githubusercontent.com/fassilsis/sales-dashboard/main/screenshots/ppa.png) |
  
-
 The Geographic and Regional Analysis page focuses on sales performance by location. It shows revenue by state and region, top-performing cities, and how sales trends vary across areas.
 
 | ![](https://raw.githubusercontent.com/fassilsis/sales-dashboard/main/screenshots/gra.png) |
