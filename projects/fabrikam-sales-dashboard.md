@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Power BI Case Study: Fabrikam Sales Dashboard
+title: "Power BI Case Study: Fabrikam Sales Dashboard"
 slug: fabrikam-sales-dashboard
 tools:
   - Power BI Desktop
