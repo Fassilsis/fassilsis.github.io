@@ -1,141 +1,120 @@
----
-layout: project
-title: Fabrikam Sales Dashboard
-slug: fabrikam-sales-dashboard
-description: >
-  A professional Power BI report analyzing product, pricing, and regional sales data for Fabrikam, Inc., designed for executive insights and decision-making.
-screenshots:
-  - /screenshots/executive-summary.png
-  - /screenshots/ppa.png
-  - /screenshots/gra.png
-  - /screenshots/msi.png
-  - /screenshots/executive-summary-with-filters-on.png
-tools:
-  - Power BI Desktop
-  - DAX
-  - Power Query
-github: https://github.com/fassilsis/fabrikam-sales-dashboard
----
+# Fabrikam Sales Dashboard
 
-# Fabrikam Sales & Performance Dashboard
+This project started as a way to sharpen my Power BI skills using a fictional dataset. I wanted to simulate a real-world scenario — where a business needs to understand its sales performance, pricing strategy, and market position — all in one interactive dashboard.
 
-In today’s fast-paced business environment, decision-makers rely on real-time insights to drive strategy. The **Fabrikam Sales Dashboard** was built to meet that need — a fully interactive **Power BI report** that presents actionable insights across product, pricing, regional performance, and manufacturer breakdowns.
+The end result is a report that does exactly that, built around **Fabrikam, Inc.**, a made-up electronics company used in Microsoft’s training materials.
 
 ---
 
-## 🏢 About Fabrikam, Inc.
+## Why Fabrikam?
 
-Fabrikam, Inc. is a fictional consumer electronics company created by Microsoft for training and demonstration purposes. Operating across multiple U.S. regions and market segments, it sells through distributors and competes with other fictional brands like Proseware and Contoso.
+Fabrikam is part of Microsoft’s demo ecosystem — think of it as a “sandbox company” with realistic data but no real-world consequences. That gave me full freedom to explore business questions without worrying about privacy or incomplete data.
 
-This simulation offers a **realistic scenario** for analyzing competitive positioning, sales growth, pricing strategy, and geographic expansion — all without the constraints of using sensitive or proprietary data.
-
----
-
-## 📦 Dataset Overview
-
-The dashboard is powered by the **VanArsdel Ltd. dataset**, published by Microsoft. This dataset includes:
-
-- 📈 Sales data: revenue, units sold, pricing
-- 📦 Product attributes: categories, segments, MSRP
-- 🌍 Geography: city, state, region, and zip code
-- 🏭 Manufacturer details: e.g., Fabrikam, Proseware, Contoso
+In this scenario, Fabrikam sells consumer electronics through various manufacturers, and competes with fictional brands like Contoso and Proseware.
 
 ---
 
-## 📊 Dashboard Pages & Features
+## What's in the data?
+
+The dataset includes:
+
+- Sales transactions (revenue, units sold, discount %)
+- Product details (category, MSRP, segment)
+- Manufacturer info
+- City, state, and region data
+
+It was enough to build a multi-layered report that can tell a story from the national level all the way down to product-level performance.
+
+---
+
+## The Report: What It Shows
+
+The dashboard is broken into four pages, each designed to answer specific questions:
 
 ### 1. Executive Summary
 
-A high-level view for leadership:
+What’s happening at a high level?
 
-- Key KPIs (Revenue, Units Sold, Avg Price)
-- Monthly sales trend
-- Regional performance summary
-- Market share across manufacturers
-
-> _Goal: Give executives a one-glance understanding of overall performance._
+- Revenue, units sold, average prices
+- Sales trends over time
+- Manufacturer market share
+- Regional performance at a glance
 
 ---
 
-### 2. Product & Pricing Analysis
+### 2. Product & Pricing
 
-Dive into product categories and pricing strategies:
+Are our pricing strategies working?
 
-- Revenue by product segment
-- Price vs MSRP gap analysis
-- Discount patterns across segments
-
-> _Goal: Understand pricing effectiveness and product profitability._
+- How do prices compare to MSRP?
+- Which segments rely most on discounts?
+- Revenue by category and segment
 
 ---
 
-### 3. Regional & Geographic Performance
+### 3. Geographic Analysis
 
-Insights by location:
+Where are we doing well (or not)?
 
-- Revenue by region and state
+- Revenue by state and region
 - Top-performing cities
 - Regional trends over time
 
-> _Goal: Identify geographic strengths and areas of growth opportunity._
+---
+
+### 4. Manufacturer View
+
+Which suppliers are driving results?
+
+- Revenue and discount patterns by manufacturer
+- Best-selling products by supplier
+- Supplier mix and contribution
 
 ---
 
-### 4. Manufacturer & Supplier Insights
+## Screenshots
 
-Evaluate supplier performance:
+Here’s a quick look at what it all looks like in Power BI:
 
-- Revenue by manufacturer
-- Discount rates
-- Top products by supplier
+| Executive Summary With Filters Applied | Product & Pricing |
+|----------------------------|-------------------|
+| ![](https://github.com/fassilsis/screenshots/executive-summary-with-filters-on.png) | ![](https://github.com/fassilsis/screenshots/ppa.png) |
 
-> _Goal: Inform procurement and partner management decisions._
-
----
-
-## 🖼️ Dashboard Screenshots
-
-| Executive Summary | Product & Pricing Analysis |
-|-------------------|----------------------------|
-| ![](/screenshots/executive-summary.png) | ![](/screenshots/ppa.png) |
-
-| Geography & Regional Analysis | Manufacturer Insights |
-|-------------------------------|------------------------|
-| ![](/screenshots/gra.png) | ![](/screenshots/msi.png) |
-
-| Executive Summary with Filters |
-|-------------------------------|
-| ![](/screenshots/executive-summary-with-filters-on.png) |
+| Regional Insights | Manufacturer View |
+|-------------------|-------------------|
+| ![](https://github.com/fassilsis/screenshots/gra.png) | ![](/screenshots/msi.png) |
 
 ---
 
-## 🧠 Key Learnings
+## Tools I Used
 
-This project helped reinforce critical analytics skills:
+This project was built entirely in Power BI Desktop. Some specific tools and techniques include:
 
-- **Data modeling** using Power Query and Power BI relationships
-- Writing **DAX measures** for dynamic KPIs and trend analysis
-- Designing **executive-friendly visuals**
-- Implementing **interactive filters** for deeper exploration
-
----
-
-## 🛠 Tools Used
-
-- Power BI Desktop
-- DAX
-- Power Query
+- **DAX**: to calculate custom KPIs and trends
+- **Power Query**: for cleaning and shaping the data
+- **Bookmarks + Slicers**: to make the report interactive and user-friendly
 
 ---
 
-## 🔗 View on GitHub
+## What I Learned
 
-If you'd like to see the raw `.pbix` file or contribute, visit the repo here:
+This wasn’t just a dashboard exercise. I treated it like a real analytics project:
 
-👉 [GitHub Repository](https://github.com/fassilsis/fabrikam-sales-dashboard)
+- How to frame business questions visually
+- How to model relationships between product, geography, and sales
+- How to avoid overloading a page while still offering depth
+
+I also got better at designing for **clarity**, not just aesthetics.
+
+---
+
+## See the Project
+
+If you want to check out the `.pbix` file or dig through the setup, feel free to explore the GitHub repo:
+
+🔗 [View Project on GitHub](https://github.com/fassilsis/sales-dashboard)
 
 ---
 
 Thanks for reading!  
-Have questions or feedback? Feel free to [connect with me on LinkedIn](https://linkedin.com/in/fassil-s-yehuala).
-
+Let me know what you think or connect with me on [LinkedIn](https://linkedin.com/in/fassil-s-yehuala) — always happy to talk data, design, or dashboards.
