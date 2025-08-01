@@ -27,7 +27,13 @@ The dataset is based on Fabrikam, Inc., Microsoft’s fictional electronics bran
 |----------------------------|-------------------|
 | ![](https://raw.githubusercontent.com/fassilsis/sales-dashboard/main/screenshots/executive-summary-with-filters-on.png) | ![](https://raw.githubusercontent.com/fassilsis/sales-dashboard/main/screenshots/ppa.png) |
 
-The final dashboard is organized into four key pages, each designed to answer specific business questions. The first page, Executive Summary, gives a high-level overview of total revenue, units sold, average prices, and sales trends over time. It also highlights market share by manufacturer and shows regional performance at a glance. Next, the Product and Pricing page dives into how pricing compares to MSRP, which customer segments rely on discounts the most, and revenue breakdowns by product category. 
+The final dashboard is organized into four key pages, each designed to answer specific business questions. 
+
+![](https://raw.githubusercontent.com/fassilsis/sales-dashboard/main/screenshots/executive-summary-with-filters-on.png
+
+The first page, Executive Summary, gives a high-level overview of total revenue, units sold, average prices, and sales trends over time. It also highlights market share by manufacturer and shows regional performance at a glance. Next, the Product and Pricing page dives into how pricing compares to MSRP, which customer segments rely on discounts the most, and revenue breakdowns by product category. 
+
+![](https://raw.githubusercontent.com/fassilsis/sales-dashboard/main/screenshots/ppa.png) |
 
 | Regional Insights | Manufacturer View |
 |-------------------|-------------------|
