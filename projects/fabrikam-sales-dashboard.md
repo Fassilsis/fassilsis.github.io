@@ -6,7 +6,6 @@ tools:
   - Power BI Desktop
   - DAX
   - Power Query
-github: https://github.com/fassilsis/fabrikam-sales-dashboard
 ---
 
 This project started as a way to sharpen my Power BI skills using a fictional dataset. I wanted to simulate a real-world scenario — where a business needs to understand its sales performance, pricing strategy, and market position — all in one interactive dashboard.
