@@ -314,6 +314,42 @@ a:hover {
   color: #52d9b1;
 }
 
+.readme-body {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.readme-body h1,
+.readme-body h2,
+.readme-body h3 {
+  color: #64ffda;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.readme-body p {
+  margin-bottom: 1.2em;
+}
+
+.readme-body ul {
+  padding-left: 1.5em;
+  margin-bottom: 1.2em;
+}
+
+.readme-body li {
+  margin-bottom: 0.5em;
+}
+
+.readme-body a {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+.readme-body a:hover {
+  text-decoration: underline;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
