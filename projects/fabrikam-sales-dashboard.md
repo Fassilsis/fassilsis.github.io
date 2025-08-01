@@ -53,7 +53,7 @@ This project was built entirely in Power BI Desktop. I used DAX formulas to crea
 
 To make the dashboard interactive, I used bookmarks and slicers. These tools allow users to filter and explore the data in a flexible way.
 
-## 🔍 What I Learned
+## What I Learned
 
 This project gave me the chance to improve a number of important skills. I practiced turning complex business questions into clear, visual answers. I focused on designing a dashboard that delivers insight without being difficult to navigate.
 
