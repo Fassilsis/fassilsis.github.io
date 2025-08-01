@@ -9,7 +9,7 @@ tools:
 github: https://github.com/fassilsis/thelooker-ecommerce-dashboard
 ---
 
-## Getting Started  Building a Powerful Ecommerce Dashboard with BigQuery and Looker Studio
+## Getting Started 
 
 Data analysis becomes meaningful when it solves real business problems. That was my goal with this ecommerce dashboard project. I worked with the TheLooker ecommerce dataset stored in BigQuery. This dataset includes orders, customers, products, and distribution centers. I created a single denormalized table from these sources to power an interactive Looker Studio dashboard.
 
