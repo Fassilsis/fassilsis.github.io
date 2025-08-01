@@ -3,10 +3,11 @@ layout: default
 ---
 
 <div class="layout">
-  <!-- Optional: Sidebar or keep it clean -->
   <div class="project-page-container">
     <div class="project-blog-post">
+      <!-- Theme toggle button -->
       <button id="theme-toggle" aria-label="Toggle Light and Dark mode">Toggle Light/Dark Mode</button>
+      
       <a href="/" class="back-link">← Back to Home</a>
 
       <h1>{{ page.title }}</h1>
@@ -20,12 +21,10 @@ layout: default
         {{ read_time }} min read
       </p>
 
-      <!-- Main content (Markdown body) -->
       <div class="readme-body">
         {{ content }}
       </div>
 
-      <!-- Tools -->
       {% if page.tools %}
       <div class="tools-used">
         <h3>🛠️ Tools Used</h3>
@@ -37,14 +36,34 @@ layout: default
       </div>
       {% endif %}
 
-      <!-- GitHub link -->
       {% if page.github %}
       <div class="github-link">
         <a href="{{ page.github }}" target="_blank">🔗 View this Project on GitHub</a>
       </div>
       {% endif %}
-     <a href="/" class="back-link" style="display: block; text-align: right;">← Back to Home</a>
-    </div>
 
+      <a href="/" class="back-link" style="display: block; text-align: right;">← Back to Home</a>
+    </div>
   </div>
 </div>
+
+<script>
+  // Apply saved theme on load
+  const body = document.body;
+  if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light');
+  } else {
+    body.classList.remove('light');
+  }
+
+  // Toggle theme and save preference
+  const toggleBtn = document.getElementById('theme-toggle');
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('light');
+    if (body.classList.contains('light')) {
+      localStorage.setItem('theme', 'light');
+    } else {
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>
