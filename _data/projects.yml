@@ -2,7 +2,9 @@
   slug: fabrikam-sales-dashboard
   tools: Power BI | DAX | Power Query | Fabric
   description: >
-    A 4-page interactive Power BI report built using Microsoft's sample dataset. This project analyzes sales, pricing, geographic performance, and manufacturer contributions for a fictional electronics company. It highlights key KPIs, identifies pricing gaps, and uncovers regional trends to support strategic business decisions.
+    A 4-page interactive Power BI report built using Microsoft's sample dataset. 
+    This project analyzes sales, pricing, geographic performance, and manufacturer contributions for a fictional electronics company. 
+    It highlights key KPIs, identifies pricing gaps, and uncovers regional trends to support strategic business decisions.
   key_features:
     - Executive summary with dynamic filters and high-level KPIs
     - Product pricing analysis
@@ -15,7 +17,9 @@
   slug: thelooker-ecommerce-dashboard
   tools: Dataform | BigQuery | SQL | Looker Studio | GitHub | Google Secret Manager
   description: >
-    A modular and scalable analytics pipeline built with Dataform and BigQuery for a realistic eCommerce dataset. This project cleans and normalizes raw data, builds denormalized production tables optimized for dashboard performance, and presents insights via a multi-page Looker Studio dashboard. 
+    A modular and scalable analytics pipeline built with Dataform and BigQuery for a realistic eCommerce dataset. 
+    This project cleans and normalizes raw data, builds denormalized production tables optimized for dashboard performance, 
+    and presents insights via a multi-page Looker Studio dashboard. 
   key_features:
     - Clean staging layer with normalized data models for efficiency
     - Secure GitHub integration using Google Secret Manager for version control
@@ -24,11 +28,28 @@
   image: images/ecommerce.jpg
   link:  https://github.com/thelooker-ecommerce-dashboard
 
+- title: "SEAN: Sentiment & Emotion Analyzer for News"
+  slug: sean-news-analyzer
+  tools: Python | NewsAPI | NLP | TextBlob | NLTK | REST API
+  description: >
+    A news sentiment and emotion analysis service. It fetches live articles from NewsAPI
+    and uses custom text processing to label them based on emotional tone, making
+    news consumption more reflective and balanced.
+  key_features:
+    - Sentiment and emotion classification of live news
+    - REST API built with FastAPI
+    - External API integration using NewsAPI
+    - Modular Python architecture with room for scaling
+  image: images/sql.jpg
+  link: https://github.com/Fassilsis/news-sentiment-api
+  
 - title: "Titanic Survival Prediction: Machine Learning Pipeline"
   slug: titanic-survival-prediction
   tools: Python | pandas | numpy | matplotlib | seaborn | scikit-learn | Jupyter Notebook
   description: >
-    A comprehensive machine learning project using the Titanic dataset to predict passenger survival. The project covers data cleaning, exploratory data analysis, feature engineering, model building, and hyperparameter tuning. Ensemble learning with VotingClassifier boosts prediction accuracy, showcasing practical end-to-end data science workflow.
+    A comprehensive machine learning project using the Titanic dataset to predict passenger survival. 
+    The project covers data cleaning, exploratory data analysis, feature engineering, model building, and hyperparameter tuning. 
+    Ensemble learning with VotingClassifier boosts prediction accuracy, showcasing practical end-to-end data science workflow.
   key_features:
     - Cleaned and preprocessed data with thoughtful handling of missing values
     - Explored key survival factors through visual analysis
