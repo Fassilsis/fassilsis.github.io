@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Fassil's Portfolio
+title: Fassil Yehuala | Portfolio
 ---
 
 <div class="layout">
