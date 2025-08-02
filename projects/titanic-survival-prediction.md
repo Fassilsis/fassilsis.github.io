@@ -19,14 +19,14 @@ This project was one of my first steps into data science. I wanted a practical w
 
 By cleaning, exploring, and modeling the data, I learned how to handle messy data and uncover insights. This project laid the foundation for my data skills today.
 
-## Why I Did This
+## Why This Project?
 
 The Titanic dataset is more than a machine learning example. It tells a human story. I wanted to practice important skills like data cleaning, exploratory analysis, feature engineering, and predictive modeling.
 
 My goal was to understand what factors affected survival and to build a model that could predict outcomes.
 
 
-## What I Did
+## How I Built It
 
 | Step                   | Description                                                                                       |
 |------------------------|-------------------------------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ My goal was to understand what factors affected survival and to build a model th
 | **Final Results**       | Achieved 91% accuracy on training data; 80.4% on test data, ranking in the top 4% on Kaggle.     |
 
 
-## What I Learned
+## ## What I Took Away
 
 This project taught me:
 
@@ -50,15 +50,5 @@ This project taught me:
 - The value of cross-validation and tuning to avoid overfitting.
 
 It also strengthened my skills with pandas, matplotlib, seaborn, and scikit-learn.
-
-
-## Tools Used
-
-- Python (pandas, numpy, matplotlib, seaborn)  
-- scikit-learn  
-- Jupyter Notebook  
-
-
-## Conclusion
 
 The Titanic project gave me hands-on experience with a full data science workflow. It helped me move from raw data to a strong predictive model. This case study remains a key part of my portfolio and shows my ability to turn data into insights.
