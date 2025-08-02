@@ -24,6 +24,21 @@
   image: images/ecommerce.jpg
   link:  https://github.com/thelooker-ecommerce-dashboard
 
+- title: "Titanic Survival Prediction: Machine Learning Pipeline"
+  slug: titanic-survival-prediction
+  tools: Python | pandas | numpy | matplotlib | seaborn | scikit-learn | Jupyter Notebook
+  description: >
+    A comprehensive machine learning project using the Titanic dataset to predict passenger survival. The project covers data cleaning, exploratory data analysis, feature engineering, model building, and hyperparameter tuning. Ensemble learning with VotingClassifier boosts prediction accuracy, showcasing practical end-to-end data science workflow.
+  key_features:
+    - Handling missing values and categorical encoding for robust preprocessing
+    - In-depth exploratory data analysis revealing key survival factors
+    - Feature engineering to create meaningful variables like family size and titles
+    - Model comparison across seven classifiers using cross-validation metrics
+    - Hyperparameter tuning for optimized predictive performance
+    - Ensemble Voting Classifier combining multiple models for improved accuracy
+  image: images/fahr.jpg
+  link:  https://github.com/titanic-survival-prediction 
+
 - title: Customer Churn Analysis
   description: Logistic regression model in Python to predict customer churn using telecom data.
   image: images/car-sales.jpg
