@@ -28,7 +28,7 @@ I focused on building a data model that supports key business metrics. These inc
 
 To build this project, I used Dataform to manage and organize my SQL logic in a modular way. I followed a layered approach to structure the project into staging, production, and definition folders.
 
-![](https://raw.githubusercontent.com/fassilsis/thelook-ecommerce-etl/main/thelook_etl.png) |
+| ![](https://raw.githubusercontent.com/fassilsis/thelook-ecommerce-etl/main/thelook_etl.png) |
 
 ### 1. Staging Layer
 
