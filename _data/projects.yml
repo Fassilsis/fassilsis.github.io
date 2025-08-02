@@ -40,7 +40,7 @@
     - REST API built with FastAPI
     - External API integration using NewsAPI
     - Modular Python architecture with room for scaling
-  image: images/sql.jpg
+  image: | ![](https://raw.githubusercontent.com/fassilsis/news-sentiment-api/master/sean.png) |
   link: https://github.com/Fassilsis/news-sentiment-api
   
 - title: "Titanic Survival Prediction: Machine Learning Pipeline"
