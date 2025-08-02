@@ -11,15 +11,17 @@
   image: images/executive-summary-with-filters-on.png
   link: https://github.com/fassilsis/sales-dashboard
 
-- title: "Ecommerce Dashboard: TheLooker Dataset Analysis"
+- title: "Dataform & BigQuery Case Study: eCommerce Analytics Pipeline"
   slug: thelooker-ecommerce-dashboard
-  tools: BigQuery | SQL | Looker Studio | Google Cloud Platform
+  tools: Dataform | BigQuery | Looker Studio | GitHub | Google Secret Manager
   description: >
-    A 3-page interactive dashboard built using a denormalized table from TheLooker ecommerce dataset in BigQuery. This project provides insights into sales performance, product profitability, and geographic distribution. It enables dynamic filtering across visuals to support data-driven business decisions in an ecommerce setting.
+    A modular and scalable analytics pipeline built with Dataform and BigQuery for a realistic eCommerce dataset. This project cleans and normalizes raw data, builds denormalized production tables optimized for dashboard performance, and presents insights via a multi-page Looker Studio dashboard covering sales, customers, returns, and cohort retention.  key_features:
   key_features:
-    - Sales overview with revenue, orders, and trends over time
-    - Product-level analysis showing category revenue and profitability
-    - Geographic insights including state and city sales and distribution centers
+    - Clean staging layer with normalized data models for efficiency
+    - Denormalized production layer optimized for fast dashboard queries
+    - Secure GitHub integration using Google Secret Manager for version control
+    - Interactive Looker Studio dashboard with executive summary, customer insights, sales, returns, and cohort retention analysis
+    - Best practices in cloud data modeling and modular SQL development
   image: images/ecommerce.jpg
   link:  https://github.com/thelooker-ecommerce-dashboard
 
