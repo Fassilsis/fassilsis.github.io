@@ -28,29 +28,24 @@ I focused on building a data model that supports key business metrics. These inc
 
 To build this project, I used Dataform to manage and organize my SQL logic in a modular way. I followed a layered approach to structure the project into staging, production, and definition folders.
 
-| ![](images/thelook_etl.png) |
+![](https://raw.githubusercontent.com/fassilsis/thelook-ecommerce-etl/main/thelook_etl.png) |
 
 ### 1. Staging Layer
 
 In the staging layer, I cleaned and prepared the raw data. This included:
 
-    Converting timestamp fields into standard date formats
-
-    Renaming columns for clarity
-
-    Filtering out invalid records
-
-    Extracting date parts like order month and cohort month
+  - Converting timestamp fields into standard date formats
+  - Renaming columns for clarity
+  - Filtering out invalid records
+  - Extracting date parts
 
 ### 2. Production Layer
 
 The production layer includes the final models used for analysis. These include:
 
-    orders: combines staging tables and calculates revenue, returns, and order-level metrics
-
-    order_items: item-level breakdown of sales and discounts
-
-    cohorts: assigns each user to a first-order cohort and tracks retention over time
+- orders: combines staging tables and calculates revenue, returns, and order-level metrics
+- order_items: item-level breakdown of sales and discounts
+- cohorts: assigns each user to a first-order cohort and tracks retention over time
 
 In this layer, I made the data ready for dashboard usage. I denormalized several tables to include all relevant information in a single table for each business topic. For example, the orders table includes user information, product category, revenue, and returns. This reduces the need for joins during dashboard queries.
 
