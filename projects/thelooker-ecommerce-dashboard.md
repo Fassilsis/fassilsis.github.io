@@ -18,13 +18,13 @@ Working with data is not only about writing SQL. It is about solving real busine
 
 The project uses a structured dataset based on a realistic eCommerce setup. It contains information about customers, orders, returns, and inventory. This allowed me to work on meaningful business questions without being limited by missing or sensitive information.
 
-## Why I Built This
+## Why This Project?
 
 In my previous roles, I worked with complex and often messy datasets. This project gave me a chance to practice the same skills in a cleaner and more structured environment. My goal was to create a full pipeline that reflects real analytics challenges.
 
 I focused on building a data model that supports key business metrics. These include sales trends, return rates, customer behavior, and cohort-based retention. I also wanted to create a dashboard that is easy to use and helps tell the story behind the numbers.
 
-## What I Did
+## How I Built It?
 
 To build this project, I used Dataform to manage and organize my SQL logic in a modular way. I followed a layered approach to structure the project into staging, production, and definition folders.
 
@@ -59,7 +59,7 @@ To manage version control, I connected the project to GitHub. I created a person
 
 This setup helps track changes over time and allows safe collaboration in a team setting.
 
-## What the Dashboard Covers
+## What’s in the Dashboard?
 
 The dashboard was built using Looker Studio. It includes five main pages. Each page focuses on a different business area.
 
@@ -73,7 +73,7 @@ The fourth page focuses on Returns. It displays total returns, return rates by p
 
 The fifth and final page is the Cohort Retention analysis. It shows how customer activity changes over the months following their first purchase. It includes a heatmap of retention and a line chart of revenue by cohort.
 
-## Final Thoughts
+## What I Took Away
 
 This project was not about exploring something entirely new. In my previous roles, I have worked on larger datasets with more complexity and less structure. Those projects involved dealing with inconsistent fields, unclean data, and more advanced logic.
 
