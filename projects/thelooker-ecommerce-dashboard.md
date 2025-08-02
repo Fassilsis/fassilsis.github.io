@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Dataform Case Study: eCommerce Analytics Pipeline"
+title: "Dataform & BigQuery Case Study: eCommerce Analytics Pipeline"
 slug: thelooker-ecommerce-dashboard
 tools:
   - BigQuery
