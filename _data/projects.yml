@@ -57,28 +57,3 @@
     - Used ensemble Voting Classifier to improve prediction accuracy
   image: images/fahr.jpg
   link:  https://github.com/titanic-survival-prediction 
-
-- title: Customer Churn Analysis
-  description: Logistic regression model in Python to predict customer churn using telecom data.
-  image: images/car-sales.jpg
-  link: https://github.com/fassilsis/churn-model
-
-- title: Web Traffic ETL Pipeline
-  description: Built a full ETL pipeline in Apache Airflow to track and clean web traffic data.
-  image: images/predictive-maintenance.jpg
-  link: https://github.com/fassilsis/etl-pipeline
-
-- title: Product Recommendation System
-  description: Collaborative filtering system to recommend products based on user behavior.
-  image: images/fahr.jpg
-  link: https://github.com/fassilsis/recommender-system
-
-- title: SQL Data Cleaning Toolkit
-  description: Set of SQL scripts for cleaning and transforming raw data for analysis.
-  image: images/sql.jpg
-  link: https://github.com/fassilsis/sql-cleaning-toolkit
-
-- title: HR Analytics Dashboard
-  description: Tableau dashboard for HR metrics like attrition, department-wise hiring trends.
-  image: images/hr.jpg
-  link: https://github.com/fassilsis/hr-dashboard
