@@ -30,12 +30,10 @@
   description: >
     A comprehensive machine learning project using the Titanic dataset to predict passenger survival. The project covers data cleaning, exploratory data analysis, feature engineering, model building, and hyperparameter tuning. Ensemble learning with VotingClassifier boosts prediction accuracy, showcasing practical end-to-end data science workflow.
   key_features:
-    - Handling missing values and categorical encoding for robust preprocessing
-    - In-depth exploratory data analysis revealing key survival factors
-    - Feature engineering to create meaningful variables like family size and titles
-    - Model comparison across seven classifiers using cross-validation metrics
-    - Hyperparameter tuning for optimized predictive performance
-    - Ensemble Voting Classifier combining multiple models for improved accuracy
+    - Cleaned and preprocessed data with thoughtful handling of missing values
+    - Explored key survival factors through visual analysis
+    - Tested and tuned multiple models for optimal performance
+    - Used ensemble Voting Classifier to improve prediction accuracy
   image: images/fahr.jpg
   link:  https://github.com/titanic-survival-prediction 
 
