@@ -1,43 +1,87 @@
 ---
 layout: project
-title: "Ecommerce Dashboard: TheLooker Dataset Analysis"
+title: "Dataform Case Study: eCommerce Analytics Pipeline"
 slug: thelooker-ecommerce-dashboard
 tools:
   - BigQuery
+  - Dataform
   - SQL
+  - GitHub
+  - Google Cloud Secret Manager
   - Looker Studio
 github: https://github.com/fassilsis/thelooker-ecommerce-dashboard
 ---
 
-## Getting Started 
+## Getting Started
 
-Data analysis becomes meaningful when it solves real business problems. That was my goal with this ecommerce dashboard project. I worked with the TheLooker ecommerce dataset stored in BigQuery. This dataset includes orders, customers, products, and distribution centers. I created a single denormalized table from these sources to power an interactive Looker Studio dashboard.
+Working with data is not only about writing SQL. It is about solving real business problems using the right approach and tools. That was the idea behind this project. I set out to build a complete eCommerce analytics pipeline that transforms data, models it for analysis, and presents insights through a clean dashboard.
 
-## Why This Project Matters
+The project uses a structured dataset based on a realistic eCommerce setup. It contains information about customers, orders, returns, and inventory. This allowed me to work on meaningful business questions without being limited by missing or sensitive information.
 
-I wanted to build a dashboard that gives a clear picture of sales performance, customer behavior, product trends, and geographic insights. The key challenge was to design it so all visuals can filter each other smoothly. That is why starting with a denormalized table was so important.
+## Why I Built This
 
-## About the Data Source
+In my previous roles, I worked with complex and often messy datasets. This project gave me a chance to practice the same skills in a cleaner and more structured environment. My goal was to create a full pipeline that reflects real analytics challenges.
 
-The dataset has detailed order information like order status and timestamps. Customer data includes age, gender, and location. Product details cover categories, brands, costs, and sale prices. Distribution center data shows where items are shipped from. Having all this combined in one table simplified querying and boosted performance.
+I focused on building a data model that supports key business metrics. These include sales trends, return rates, customer behavior, and cohort-based retention. I also wanted to create a dashboard that is easy to use and helps tell the story behind the numbers.
+
+## What I Did
+
+To build this project, I used Dataform to manage and organize my SQL logic in a modular way. I followed a layered approach to structure the project into staging, production, and definition folders.
+
+### 1. Staging Layer
+
+In the staging layer, I cleaned and prepared the raw data. This included:
+
+    Converting timestamp fields into standard date formats
+
+    Renaming columns for clarity
+
+    Filtering out invalid records
+
+    Extracting date parts like order month and cohort month
+
+### 2. Production Layer
+
+The production layer includes the final models used for analysis. These include:
+
+    orders: combines staging tables and calculates revenue, returns, and order-level metrics
+
+    order_items: item-level breakdown of sales and discounts
+
+    cohorts: assigns each user to a first-order cohort and tracks retention over time
+
+In this layer, I made the data ready for dashboard usage. I denormalized several tables to include all relevant information in a single table for each business topic. For example, the orders table includes user information, product category, revenue, and returns. This reduces the need for joins during dashboard queries.
+
+Denormalization is a good practice in BigQuery when the goal is fast and cost-effective dashboard performance. Since BigQuery is a columnar and distributed data warehouse, reading a wide table with only the needed columns is faster than joining multiple tables at runtime. This approach helps dashboards load faster and ensures better user experience, especially when working with large datasets.
+
+I used reusable SQLX files and dependency chains to keep the logic modular and easy to test. In traditional databases, normalization reduces data duplication and keeps data consistent. This is helpful when data changes frequently. BigQuery, however, is built for analytical queries on huge datasets. Denormalization works better in this context. It combines related data into one wide table. This avoids costly joins and makes queries faster. Denormalized tables also reduce the amount of data scanned, which lowers costs. For dashboards, denormalized data simplifies filtering and cross-highlighting.
+
+### 3. GitHub Integration
+
+To manage version control, I connected the project to GitHub. I created a personal access token (PAT) and stored it securely in Google Secret Manager. I then granted access to the Dataform service account so that it could use the secret to push changes to the GitHub repository.
+
+This setup helps track changes over time and allows safe collaboration in a team setting.
 
 ## What the Dashboard Covers
 
-The dashboard is organized into three main pages. The first page is a sales overview. It shows total revenue, number of orders, average order size, and sales trends over time. You can filter by date ranges, customer gender, and order status.
+The dashboard was built using Looker Studio. It includes five main pages. Each page focuses on a different business area.
 
-The second page dives into product performance. It highlights revenue by category and brand. It also compares sale price against cost to reveal profitability. Top-selling products are easy to spot here.
+The first page is the Executive Summary. It provides an overview of key metrics such as total revenue, order count, average order value, and return volume. It also includes a time-based revenue trend and basic filters.
 
-The third page focuses on geographic insights. It maps sales by state and city. It also shows distribution centers to identify strong and weak markets. All pages include interactive filters that cross-filter charts for smooth exploration.
+The second page is Customer Insights. This section shows the number of new and returning customers. It tracks how customer counts change over time and includes a summary of customer lifetime value.
 
-## Tools and Techniques Used
+The third page is Sales and Product Performance. This part breaks down revenue by product category, highlights top-selling items, and shows sales performance by distribution center.
 
-I wrote a SQL query in BigQuery to create the denormalized table. Then I built the dashboard in Looker Studio using its powerful filtering and visualization tools. The end result is a clean and interactive report that answers key business questions.
-Lessons Learned
+The fourth page focuses on Returns. It displays total returns, return rates by product or region, and the impact of returns on net revenue.
 
-## Why Denormalization Works Better in BigQuery
+The fifth and final page is the Cohort Retention analysis. It shows how customer activity changes over the months following their first purchase. It includes a heatmap of retention and a line chart of revenue by cohort.
 
-In traditional databases, normalization reduces data duplication and keeps data consistent. This is helpful when data changes frequently. BigQuery, however, is built for analytical queries on huge datasets. Denormalization works better in this context. It combines related data into one wide table. This avoids costly joins and makes queries faster. Denormalized tables also reduce the amount of data scanned, which lowers costs. For dashboards, denormalized data simplifies filtering and cross-highlighting.
+## Final Thoughts
 
-Normalization still makes sense when data updates are frequent or when complex data relationships need to be preserved. But for this dashboard, denormalization was the right choice.
+This project was not about exploring something entirely new. In my previous roles, I have worked on larger datasets with more complexity and less structure. Those projects involved dealing with inconsistent fields, unclean data, and more advanced logic.
 
-This project helped me improve data modeling skills tailored for analytics. It showed me how to design dashboards that are both detailed and user-friendly. Above all, I learned that good data design and visualization go hand in hand to transform data into actionable insights.
+What this project offered was an opportunity to organize my process clearly from start to finish. I used this cleaner dataset to demonstrate how I approach data modeling, transformation, and reporting when I have full control over the workflow.
+
+It also gave me the chance to present my skills in a more structured and sharable way. I followed best practices for working in BigQuery, such as separating staging and production layers, applying normalization during transformation, and using denormalization for performance at the reporting level.
+
+This project is a simplified version of the work I have done before, but it follows the same principles I use in more complex environments.
