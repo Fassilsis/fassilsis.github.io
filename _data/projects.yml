@@ -13,14 +13,13 @@
 
 - title: "Dataform & BigQuery Case Study: eCommerce Analytics Pipeline"
   slug: thelooker-ecommerce-dashboard
-  tools: Dataform | BigQuery | Looker Studio | GitHub | Google Secret Manager
+  tools: Dataform | BigQuery | SQL | Looker Studio | GitHub | Google Secret Manager
   description: >
-    A modular and scalable analytics pipeline built with Dataform and BigQuery for a realistic eCommerce dataset. This project cleans and normalizes raw data, builds denormalized production tables optimized for dashboard performance, and presents insights via a multi-page Looker Studio dashboard covering sales, customers, returns, and cohort retention.  key_features:
+    A modular and scalable analytics pipeline built with Dataform and BigQuery for a realistic eCommerce dataset. This project cleans and normalizes raw data, builds denormalized production tables optimized for dashboard performance, and presents insights via a multi-page Looker Studio dashboard. 
   key_features:
     - Clean staging layer with normalized data models for efficiency
-    - Denormalized production layer optimized for fast dashboard queries
     - Secure GitHub integration using Google Secret Manager for version control
-    - Interactive Looker Studio dashboard with executive summary, customer insights, sales, returns, and cohort retention analysis
+    - Interactive Looker Studio dashboard
     - Best practices in cloud data modeling and modular SQL development
   image: images/ecommerce.jpg
   link:  https://github.com/thelooker-ecommerce-dashboard
