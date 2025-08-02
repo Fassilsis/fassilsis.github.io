@@ -28,6 +28,8 @@ I focused on building a data model that supports key business metrics. These inc
 
 To build this project, I used Dataform to manage and organize my SQL logic in a modular way. I followed a layered approach to structure the project into staging, production, and definition folders.
 
+| ![](images/thelook_etl.png) |
+
 ### 1. Staging Layer
 
 In the staging layer, I cleaned and prepared the raw data. This included:
@@ -80,8 +82,6 @@ The fifth and final page is the Cohort Retention analysis. It shows how customer
 
 This project was not about exploring something entirely new. In my previous roles, I have worked on larger datasets with more complexity and less structure. Those projects involved dealing with inconsistent fields, unclean data, and more advanced logic.
 
-What this project offered was an opportunity to organize my process clearly from start to finish. I used this cleaner dataset to demonstrate how I approach data modeling, transformation, and reporting when I have full control over the workflow.
-
-It also gave me the chance to present my skills in a more structured and sharable way. I followed best practices for working in BigQuery, such as separating staging and production layers, applying normalization during transformation, and using denormalization for performance at the reporting level.
+What this project offered was an opportunity to organize my process clearly from start to finish. I used this cleaner dataset to demonstrate how I approach data modeling, transformation, and reporting when I have full control over the workflow. It also gave me the chance to present my skills in a more structured and sharable way. I followed best practices for working in BigQuery.
 
 This project is a simplified version of the work I have done before, but it follows the same principles I use in more complex environments.
