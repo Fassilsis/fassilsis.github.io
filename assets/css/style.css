@@ -335,6 +335,10 @@ a:hover {
   margin-top: 1.5em;
 }
 
+.project-row + .project-link {
+  margin-top: 1.5em;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .layout {
