@@ -75,7 +75,7 @@ a:hover {
 .profile-pic {
   width: 120px !important;
   height: 120px !important;
-  border-radius: 10%;
+  border-radius: 35%;
   border: 3px solid var(--link-color);
   margin-bottom: 15px;
   object-fit: cover;
@@ -110,7 +110,7 @@ a:hover {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contact-icons img {
@@ -386,7 +386,7 @@ body.light {
 
 #theme-toggle {
   position: fixed;
-  top: 60px;
+  top: 40px;
   right: 40px;
   width: 35px;
   height: 35px;
