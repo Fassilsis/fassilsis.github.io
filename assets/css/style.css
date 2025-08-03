@@ -98,11 +98,11 @@ a:hover {
 
 /* Bio */
 .about-text p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--text-color);
   line-height: 1.25;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 
 /* Contact Icons */
