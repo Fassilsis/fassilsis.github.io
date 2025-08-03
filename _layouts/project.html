@@ -14,7 +14,7 @@ layout: default
  
       <p class="post-meta">
         {{ page.date | date: "%B %-d, %Y" }}
-        • 
+        ~ 
         {% assign words = content | number_of_words %}
         {% assign read_time = words | divided_by:150 | ceil %}
         {{ read_time }} min read
