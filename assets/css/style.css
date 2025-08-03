@@ -73,9 +73,9 @@ a:hover {
 }
 
 .profile-pic {
-  width: 120px !important;
+  width: 240px !important;
   height: 120px !important;
-  border-radius: 35%;
+  border-radius: 15%;
   border: 3px solid var(--link-color);
   margin-bottom: 15px;
   object-fit: cover;
