@@ -14,13 +14,16 @@ title: Fassil Yehuala | Portfolio
     <p class="title">Data Analyst | Analytics Engineer</p>
     <div class="about-text">
       <p>
-        With a background in economics and policy analysis, I bring strong analytical thinking and hands-on experience in data modeling, analysis, pipeline development, and visualization. My academic training sharpened my skills in data analysis, statistical modeling, and quantitative research.
+        I am a data analyst and analytics engineer with a background in economics and policy analysis. I work with businesses to build clean, reliable data systems that help them make better decisions. My focus is on creating solutions that are practical, scalable, and easy to maintain.
       </p>
       <p>
-        In recent years, I have taken on technical roles where I built and maintained scalable end-to-end data pipelines, developed automated reporting systems, and supported decision-making through data visualization.
+        I have experience across the full data workflow. This includes transforming raw data, modeling it to reflect business needs, and presenting insights through clear, interactive dashboards. I use tools like BigQuery, Dataform, Power BI, and Looker Studio to support these projects.
       </p>
       <p>
-       I can explore complex datasets, create data models that reflect real business logic, and communicate insights clearly and effectively.
+       Before moving into the tech space, I worked in policy research and higher education. That time sharpened my analytical thinking and helped me learn how to communicate complex ideas clearly. These skills continue to shape my work in analytics.
+      </p>
+      <p>
+       I enjoy solving real-world problems with data. Whether I am building a pipeline or supporting a product team, I aim for clarity, consistency, and long-term value.
       </p>
     </div>
     <div class="contact-icons">
