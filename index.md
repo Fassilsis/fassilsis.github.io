@@ -52,7 +52,7 @@ title: Fassil Yehuala | Portfolio
               <span>Tools: {{ project.tools | join: ", " }}</span>
             </div>
             {% endif %}
-            <!--<a href="{{ project.link }}" target="_blank" rel="noopener noreferrer" class="project-link">🔗 View Project on GitHub</a> -->
+            <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer" class="project-link">🔗 Discover the Full Project</a> 
           </div>
         </div>
         {% endfor %}
