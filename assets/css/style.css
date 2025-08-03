@@ -183,7 +183,7 @@ a:hover {
   width: 180px;
   height: 120px;
   object-fit: cover;
-  object-position: left center;
+  object-position: left top;
   border-radius: 4px;
 }
 
