@@ -25,7 +25,7 @@
     - Secure GitHub integration using Google Secret Manager for version control
     - Interactive Looker Studio dashboard
     - Best practices in cloud data modeling and modular SQL development
-  image: images/ecommerce.jpg
+  image: https://raw.githubusercontent.com/fassilsis/thelook-ecommerce-etl/thelook_etl/thelook_etl.png
   link:  https://github.com/thelooker-ecommerce-dashboard
 
 - title: "SEAN: Sentiment & Emotion Analyzer for News"
