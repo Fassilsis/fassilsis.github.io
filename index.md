@@ -12,6 +12,11 @@ title: Fassil Yehuala | Portfolio
     <img src="images/profile.JPG" alt="Profile Photo" class="profile-pic" />
     <h1>Fassil Yehuala</h1>
     <p class="title">Data Analyst | Analytics Engineer</p>
+     <div class="contact-icons">
+      <a href="mailto:fassil.yehuala@gmail.com"><img src="/images/mail.png" alt="Email" /></a>
+      <a href="https://github.com/fassilsis" target="_blank" rel="noopener noreferrer"><img src="/images/github.png" alt="GitHub" /></a>
+      <a href="https://linkedin.com/in/fassil-s-yehuala" target="_blank" rel="noopener noreferrer"><img src="/images/linkedin.png" alt="LinkedIn" /></a>
+    </div>
     <div class="about-text">
       <p>
         I am a data analyst and analytics engineer with a background in economics and policy analysis. I work with businesses to build clean, reliable data systems that help them make better decisions. My focus is on creating solutions that are practical, scalable, and easy to maintain.
@@ -25,11 +30,6 @@ title: Fassil Yehuala | Portfolio
       <p>
        I enjoy solving real-world problems with data. Whether I am building a pipeline or supporting a product team, I aim for clarity, consistency, and long-term value.
       </p>
-    </div>
-    <div class="contact-icons">
-      <a href="mailto:fassil.yehuala@gmail.com"><img src="/images/mail.png" alt="Email" /></a>
-      <a href="https://github.com/fassilsis" target="_blank" rel="noopener noreferrer"><img src="/images/github.png" alt="GitHub" /></a>
-      <a href="https://linkedin.com/in/fassil-s-yehuala" target="_blank" rel="noopener noreferrer"><img src="/images/linkedin.png" alt="LinkedIn" /></a>
     </div>
   </div>
   <!-- Main Content -->
